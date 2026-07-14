@@ -66,8 +66,8 @@ export default function ContactWidget() {
                 </button>
               ) : (
                 <Image
-                  src="/images/logo/logo.svg"
-                  alt="Logo"
+                  src="/images/brands/bizhero-logo.jpg"
+                  alt="BizHero"
                   width={36}
                   height={36}
                   className="shrink-0"
