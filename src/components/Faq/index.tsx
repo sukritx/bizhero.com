@@ -4,44 +4,44 @@ import { useState } from "react";
 
 const faqData = [
   {
-    question: "Do you offer 24/7 emergency plumbing service?",
+    question: "What brands of lubricants does BizHero distribute?",
     answer:
-      "Yes! We provide 24/7 emergency plumbing service throughout Los Angeles County and Orange County. Whether it's a burst pipe, sewer backup, gas leak, or any other plumbing emergency, our team is ready to respond day or night. Call us at (323) 410-2068 anytime.",
+      "BizHero is an authorized distributor of Valvoline, PETRONAS, and Monroe lubricants. Valvoline provides automotive and industrial lubricants, PETRONAS offers industrial and commercial solutions, and Monroe specializes in metal working fluids.",
   },
   {
-    question: "What is trenchless pipe relining?",
+    question: "How do I choose the right engine oil?",
     answer:
-      "Trenchless pipe relining (also called CIPP — Cured-In-Place Pipe lining) is a method of rehabilitating damaged underground pipes without the need for extensive excavation. We insert a resin-saturated liner into the existing pipe, which cures to form a new pipe within the old one. This method works for pipes from 2\"–48\" in diameter and saves significant time, cost, and damage to your property compared to traditional dig-and-replace methods.",
+      "The right engine oil depends on your vehicle or equipment specifications, operating conditions, and manufacturer recommendations. Our technical team can help you select the appropriate viscosity grade and performance level for your application.",
   },
   {
-    question: "Are you licensed and insured?",
+    question: "Do you offer maintenance services?",
     answer:
-      "Absolutely. A-1 Total Service Plumbing is fully licensed (California State License #1135475), bonded, and insured. This protects both our team and our customers, giving you complete peace of mind when we work on your property.",
+      "Yes, we provide oil change services, sump tank cleaning, and used oil analysis. These services help maintain your machinery, reduce equipment downtime, and extend the service life of your lubricants.",
   },
   {
-    question: "What areas do you serve?",
+    question: "What is used oil analysis and why is it important?",
     answer:
-      "We primarily serve Los Angeles County and Orange County, including Commerce, Vernon, Monterey Park, Montebello, Anaheim, La Habra, South Bay, and East Los Angeles. For trenchless pipe relining projects, we also offer nationwide support for industrial and municipal applications.",
+      "Used oil analysis is a diagnostic service that evaluates wear metals, contamination, viscosity, and oil condition in used lubricants. It enables predictive maintenance, early fault detection, lower maintenance costs, and reduced unplanned downtime.",
   },
   {
-    question: "How much does a plumbing service call cost?",
+    question: "Do you supply lubricants for industrial manufacturing?",
     answer:
-      "Our pricing varies depending on the service needed. We offer free estimates for most services and always provide upfront pricing before any work begins — no hidden fees or surprise charges. We also offer financing options and military discounts to help make quality plumbing service accessible.",
+      "Yes, we supply hydraulic oils, gear oils, compressor oils, and metal working fluids for manufacturing plants, CNC machining operations, food factories, steel plants, plastic injection molding, and packaging facilities.",
   },
   {
-    question: "How quickly can you respond to a service call?",
+    question: "Which industries do you serve?",
     answer:
-      "We pride ourselves on fast response times. For emergency calls, we typically have a technician at your location within 1–2 hours. For scheduled appointments, we offer flexible scheduling including early morning and evening time slots. Our regular business hours are 6:00 AM – 7:00 PM, 7 days a week.",
+      "We serve manufacturing, construction, transportation, agriculture, heavy equipment, logistics, and energy sectors. Each industry has specific lubrication requirements that we can help address.",
   },
   {
-    question: "Do you offer warranties on your work?",
+    question: "How can I get a quote for lubricant products?",
     answer:
-      "Yes, we stand behind the quality of our workmanship. We offer warranties on our plumbing services and installations. The specific warranty terms depend on the type of service performed. Our team will always explain the warranty coverage before starting any work.",
+      "You can contact us through our website contact form or visit our facility. Provide your equipment details, required products, and quantities, and our team will prepare a competitive quote for you.",
   },
   {
-    question: "What is hydro jetting and when is it needed?",
+    question: "Do you provide technical support for lubricant selection?",
     answer:
-      "Hydro jetting uses high-pressure water streams (up to 4,000 PSI) to clear severe blockages, tree roots, grease buildup, and mineral deposits from pipes. It's typically needed when traditional drain snaking isn't sufficient, or as preventative maintenance for commercial properties and older plumbing systems. It's safe for most pipe types and environmentally friendly since it uses only water.",
+      "Yes, our team offers technical support to help you select the right lubricant for your specific equipment and application. We consider factors like operating temperature, load conditions, and manufacturer specifications.",
   },
 ];
 
@@ -108,7 +108,7 @@ const Faq = () => {
             Frequently Asked Questions
           </h2>
           <p className="text-base leading-relaxed text-body-color dark:text-dark-6">
-            Common questions about our plumbing services. Don&apos;t see yours? Call us at <a href="tel:3234102068" className="text-primary hover:underline">(323) 410-2068</a>.
+            Common questions about our lubricants and services. Contact us for more information.
           </p>
         </div>
 

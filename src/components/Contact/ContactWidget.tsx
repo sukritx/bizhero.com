@@ -94,17 +94,18 @@ export default function ContactWidget() {
             <>
               <div className="space-y-3">
                 <a
-                  href="tel:3234102068"
+                  href="mailto:info@bizherolubricants.com"
                   className="flex items-center gap-3 rounded-lg border border-[#f1f1f1] px-4 py-3 text-sm font-medium text-dark transition hover:border-primary hover:text-primary dark:border-dark-3 dark:text-white dark:hover:border-primary dark:hover:text-primary"
                 >
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1.02l-2.2 2.2z" />
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                    <polyline points="22,6 12,13 2,6" />
                   </svg>
-                  (323) 410-2068
+                  Email Us
                 </a>
                 <a
                   aria-label="Facebook"
-                  href="https://www.facebook.com/a1totalserviceplumbing"
+                  href="https://www.facebook.com/bizherolubricants"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 rounded-lg border border-[#f1f1f1] px-4 py-3 text-sm font-medium text-dark transition hover:border-primary hover:text-primary dark:border-dark-3 dark:text-white dark:hover:border-primary dark:hover:text-primary"
@@ -120,7 +121,7 @@ export default function ContactWidget() {
                 </a>
                 <a
                   aria-label="Instagram"
-                  href="https://www.instagram.com/a1totalserviceplumbing"
+                  href="https://www.instagram.com/bizherolubricants"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 rounded-lg border border-[#f1f1f1] px-4 py-3 text-sm font-medium text-dark transition hover:border-primary hover:text-primary dark:border-dark-3 dark:text-white dark:hover:border-primary dark:hover:text-primary"
@@ -131,34 +132,6 @@ export default function ContactWidget() {
                     <path d="M16.0276 4.96777C15.6432 4.96777 15.318 5.29304 15.318 5.67745C15.318 6.06186 15.6432 6.38713 16.0276 6.38713C16.412 6.38713 16.7373 6.06186 16.7373 5.67745C16.7373 5.29304 16.4416 4.96777 16.0276 4.96777Z" />
                   </svg>
                   Instagram
-                </a>
-                <a
-                  aria-label="Line"
-                  href="https://line.me/ti/p/~a1totalserviceplumbing"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-3 rounded-lg border border-[#f1f1f1] px-4 py-3 text-sm font-medium text-dark transition hover:border-primary hover:text-primary dark:border-dark-3 dark:text-white dark:hover:border-primary dark:hover:text-primary"
-                >
-                  <Image
-                    src="/icons/line-svgrepo-com.svg"
-                    alt="LINE"
-                    width={20}
-                    height={20}
-                    className="shrink-0"
-                  />
-                  LINE
-                </a>
-                <a
-                  aria-label="Yelp"
-                  href="https://www.yelp.com/biz/a-1-total-service-plumbing"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-3 rounded-lg border border-[#f1f1f1] px-4 py-3 text-sm font-medium text-dark transition hover:border-primary hover:text-primary dark:border-dark-3 dark:text-white dark:hover:border-primary dark:hover:text-primary"
-                >
-                  <svg width="20" height="20" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" className="fill-current shrink-0">
-                    <path d="M18.8065 1.8335H3.16399C2.42474 1.8335 1.83334 2.42489 1.83334 3.16414V18.8362C1.83334 19.5459 2.42474 20.1668 3.16399 20.1668H18.7473C19.4866 20.1668 20.078 19.5754 20.078 18.8362V3.13457C20.1371 2.42489 19.5457 1.8335 18.8065 1.8335ZM7.24464 17.4168H4.55379V8.69371H7.24464V17.4168ZM5.88443 7.48135C4.99733 7.48135 4.31721 6.77167 4.31721 5.91414C4.31721 5.05661 5.0269 4.34694 5.88443 4.34694C6.74196 4.34694 7.45163 5.05661 7.45163 5.91414C7.45163 6.77167 6.8011 7.48135 5.88443 7.48135ZM17.4463 17.4168H14.7554V13.1883C14.7554 12.183 14.7258 10.8523 13.336 10.8523C11.9167 10.8523 11.7097 11.976 11.7097 13.0996V17.4168H9.01884V8.69371H11.6506V9.90608H11.6801C12.0645 9.1964 12.9221 8.48672 14.2527 8.48672C17.0027 8.48672 17.5054 10.2609 17.5054 12.6856V17.4168H17.4463Z" />
-                  </svg>
-                  Yelp
                 </a>
               </div>
 
@@ -171,7 +144,7 @@ export default function ContactWidget() {
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" />
                 </svg>
-                Send us a message
+                Request a Quote
               </button>
             </>
           ) : (
@@ -223,7 +196,7 @@ export default function ContactWidget() {
                     <textarea
                       name="message"
                       rows={4}
-                      placeholder="Describe your issue...*"
+                      placeholder="Tell us about your lubricant or maintenance needs...*"
                       required
                       className="w-full resize-none border-b border-[#f1f1f1] bg-transparent py-3 text-sm text-dark placeholder:text-body-color/60 focus:border-primary focus:outline-none dark:border-dark-3 dark:text-white"
                     ></textarea>

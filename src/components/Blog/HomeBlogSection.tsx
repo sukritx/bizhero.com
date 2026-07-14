@@ -7,9 +7,9 @@ const HomeBlogSection = ({ posts }: any) => {
       <div className="container mx-auto">
         <div className="mb-[60px]">
           <SectionTitle
-            subtitle="Plumbing Tips & Advice"
+            subtitle="Lubricant Tips & Insights"
             title="From Our Blog"
-            paragraph="Expert plumbing tips, maintenance advice, and industry insights for homeowners and businesses in Southern California."
+            paragraph="Expert tips on lubricant selection, equipment maintenance, and industry insights for businesses and fleet operators."
             width="640px"
             center
           />

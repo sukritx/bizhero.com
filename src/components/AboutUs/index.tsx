@@ -18,7 +18,6 @@ const socialLinks = [
       <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" className="fill-current">
         <path d="M11.0297 14.4305C12.9241 14.4305 14.4598 12.8948 14.4598 11.0004C14.4598 9.10602 12.9241 7.57031 11.0297 7.57031C9.13529 7.57031 7.59958 9.10602 7.59958 11.0004C7.59958 12.8948 9.13529 14.4305 11.0297 14.4305Z" />
         <path d="M14.7554 1.8335H7.24463C4.25807 1.8335 1.83334 4.25823 1.83334 7.24479V14.6964C1.83334 17.7421 4.25807 20.1668 7.24463 20.1668H14.6962C17.7419 20.1668 20.1667 17.7421 20.1667 14.7555V7.24479C20.1667 4.25823 17.7419 1.8335 14.7554 1.8335ZM11.0296 15.4948C8.51614 15.4948 6.53496 13.4545 6.53496 11.0002C6.53496 8.54586 8.54571 6.50554 11.0296 6.50554C13.4839 6.50554 15.4946 8.54586 15.4946 11.0002C15.4946 13.4545 13.5134 15.4948 11.0296 15.4948ZM17.2393 6.91952C16.9436 7.24479 16.5 7.42221 15.9973 7.42221C15.5538 7.42221 15.1102 7.24479 14.7554 6.91952C14.4301 6.59425 14.2527 6.18027 14.2527 5.67758C14.2527 5.17489 14.4301 4.79049 14.7554 4.43565C15.0807 4.08081 15.4946 3.90339 15.9973 3.90339C16.4409 3.90339 16.914 4.08081 17.2393 4.40608C17.535 4.79049 17.7419 5.23403 17.7419 5.70715C17.7124 6.18027 17.535 6.59425 17.2393 6.91952Z" />
-        <path d="M16.0276 4.96777C15.6432 4.96777 15.318 5.29304 15.318 5.67745C15.318 6.06186 15.6432 6.38713 16.0276 6.38713C16.412 6.38713 16.7373 6.06186 16.7373 5.67745C16.7373 5.29304 16.4416 4.96777 16.0276 4.96777Z" />
       </svg>
     ),
   },
@@ -51,28 +50,52 @@ const AboutUs = () => {
             <div className="relative mb-10 h-[350px] overflow-hidden rounded-xl lg:mb-0 lg:h-[460px]">
               <Image
                 src="/images/about/about-image-01.jpg"
-                alt="About our team"
+                alt="BizHero Lubricants"
                 fill
                 className="h-full w-full object-cover object-center"
               />
             </div>
           </div>
-
           <div className="w-full px-4 lg:w-1/2">
             <div className="lg:pl-8">
               <span className="mb-4 inline-block text-sm font-semibold uppercase tracking-wider text-primary">
-                About Us
+                About BizHero
               </span>
               <h2 className="mb-6 text-3xl font-bold leading-tight text-gray-900 sm:text-4xl">
-                Dedicated to Quality Service Since Day One
+                More Than Just a Lubricant Supplier
               </h2>
               <p className="mb-4 text-lg leading-relaxed text-gray-600">
-                We are a locally owned and operated company committed to delivering exceptional results for every project. Our team of experienced professionals takes pride in providing reliable, honest, and high-quality service to our community.
+                BizHero Lubricants is an authorized distributor of Valvoline, PETRONAS, and Monroe lubricants, serving automotive, commercial, and industrial customers. We supply a comprehensive range of engine oils, hydraulic oils, gear oils, greases, and specialty lubricants.
               </p>
               <p className="mb-8 text-lg leading-relaxed text-gray-600">
-                With years of industry experience and a dedication to customer satisfaction, we have built a reputation you can trust. From small repairs to large installations, we approach every job with the same level of care and professionalism.
+                What sets us apart: we don&apos;t just sell products. We provide industrial maintenance services including oil changes, sump tank cleaning, and used oil analysis to help businesses maintain machinery and reduce costly equipment downtime.
               </p>
-
+              <div className="mb-8 grid grid-cols-2 gap-4">
+                <div className="flex items-center gap-3">
+                  <svg className="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span className="text-sm font-medium text-gray-700">Authorized Distributor</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <svg className="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span className="text-sm font-medium text-gray-700">Technical Support</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <svg className="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span className="text-sm font-medium text-gray-700">Maintenance Services</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <svg className="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span className="text-sm font-medium text-gray-700">Predictive Maintenance</span>
+                </div>
+              </div>
               <div>
                 <p className="mb-3 text-sm font-semibold text-gray-900">Follow Us</p>
                 <div className="-mx-2 flex items-center">

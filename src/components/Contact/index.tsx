@@ -41,7 +41,7 @@ const Contact = () => {
                   CONTACT US
                 </span>
                 <h2 className="max-w-[360px] text-[35px] font-semibold leading-[1.14] text-dark dark:text-white">
-                  Need a Plumber? We&apos;re Here 24/7.
+                  Need Lubricants? We&apos;re Here to Help.
                 </h2>
               </div>
               <div className="mb-12 flex flex-wrap justify-between lg:mb-0">
@@ -59,13 +59,10 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="mb-[18px] text-lg font-semibold text-dark dark:text-white">
-                      Our Locations
+                      Our Location
                     </h3>
                     <p className="text-base text-body-color dark:text-dark-6">
-                      <strong>LA County Office:</strong> Serving Commerce, Vernon, Monterey Park, Montebello &amp; surrounding areas
-                    </p>
-                    <p className="mt-2 text-base text-body-color dark:text-dark-6">
-                      <strong>Orange County Office:</strong> Anaheim &amp; La Habra areas
+                      Visit our facility for product pickup, technical consultation, and maintenance services. Serving businesses across the region.
                     </p>
                   </div>
                 </div>
@@ -82,19 +79,16 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="mb-[18px] text-lg font-semibold text-dark dark:text-white">
-                      Contact Us Anytime
+                      Get in Touch
                     </h3>
                     <p className="text-base text-body-color dark:text-dark-6">
-                      <a href="tel:3234102068" className="hover:text-primary">(323) 410-2068</a>
-                    </p>
-                    <p className="mt-1 text-base text-body-color dark:text-dark-6">
-                      <a href="mailto:a1totalserviceplumbing@gmail.com" className="hover:text-primary">a1totalserviceplumbing@gmail.com</a>
+                      <a href="mailto:info@bizherolubricants.com" className="hover:text-primary">info@bizherolubricants.com</a>
                     </p>
                     <p className="mt-2 text-base text-body-color dark:text-dark-6">
-                      Mon–Sun: 6:00 AM – 7:00 PM
+                      Mon–Fri: 8:00 AM – 6:00 PM
                     </p>
-                    <p className="text-base font-semibold text-primary">
-                      Emergency: 24/7
+                    <p className="text-base text-body-color dark:text-dark-6">
+                      Sat: 8:00 AM – 2:00 PM
                     </p>
                   </div>
                 </div>
@@ -107,7 +101,7 @@ const Contact = () => {
               data-wow-delay=".2s"
             >
               <h3 className="mb-8 text-2xl font-semibold text-dark dark:text-white md:text-[28px] md:leading-[1.42]">
-                Request a Free Estimate
+                Request a Quote
               </h3>
               {status === "success" ? (
                 <p className="text-center text-lg font-medium text-green-600">
@@ -186,13 +180,13 @@ const Contact = () => {
                       htmlFor="contact-message"
                       className="mb-4 block text-sm text-body-color dark:text-dark-6"
                     >
-                      Describe Your Issue*
+                      How Can We Help You?*
                     </label>
                     <textarea
                       name="message"
                       id="contact-message"
                       rows={3}
-                      placeholder="Tell us about your plumbing issue..."
+                      placeholder="Tell us about your lubricant or maintenance needs..."
                       required
                       className="w-full resize-none border-0 border-b border-[#f1f1f1] bg-transparent pb-3 text-dark placeholder:text-body-color/60 focus:border-primary focus:outline-none dark:border-dark-3 dark:text-white"
                     ></textarea>

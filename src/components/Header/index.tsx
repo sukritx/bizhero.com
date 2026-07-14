@@ -3,8 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-
-import menuData from "./menuData";
+import menuData from "@/data/menuData";
 
 const Header = () => {
   const pathUrl = usePathname();
@@ -47,7 +46,7 @@ const Header = () => {
               <Link href="/" className="navbar-logo block w-full py-5">
                 <Image
                   src="/images/brands/bizhero-logo.jpg"
-                  alt="BizHero"
+                  alt="BizHero Lubricants"
                   width={200}
                   height={60}
                   className="h-auto w-full max-w-[200px]"
@@ -140,34 +139,22 @@ const Header = () => {
                     )}
                   </ul>
                   <div className="mt-4 flex flex-col gap-3 border-t border-stroke pt-4 lg:hidden">
-                    <a
-                      href="tel:3234102068"
-                      className="px-4 py-3 text-center text-base font-medium text-dark hover:opacity-70"
-                    >
-                      (323) 410-2068
-                    </a>
                     <Link
                       href="/contact"
                       onClick={navbarToggleHandler}
                       className="bg-primary px-6 py-3 text-center text-base font-bold text-white duration-300 ease-in-out hover:bg-primary/90"
                     >
-                      Get a Free Estimate
+                      Request a Quote
                     </Link>
                   </div>
                 </nav>
               </div>
               <div className="hidden items-center justify-end pr-16 sm:flex lg:pr-0">
-                <a
-                  href="tel:3234102068"
-                  className="px-7 py-3 text-base font-medium text-dark hover:opacity-70"
-                >
-                  (323) 410-2068
-                </a>
                 <Link
                   href="/contact"
                   className="bg-primary px-6 py-3 text-base font-bold text-white duration-300 ease-in-out hover:bg-primary/90"
                 >
-                  Get a Free Estimate
+                  Request a Quote
                 </Link>
               </div>
             </div>

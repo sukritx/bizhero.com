@@ -1,16 +1,16 @@
 import Link from "next/link";
 import CallToAction from "@/components/CallToAction";
-import { productCategories } from "@/data/productsData";
+import { brands } from "@/data/brandsData";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title:
-    "Products | BizHero Lubricants - Automotive & Industrial Lubricants",
+    "Our Brands | BizHero Lubricants - Valvoline, PETRONAS, Monroe",
   description:
-    "Browse our complete range of automotive and industrial lubricants including engine oil, hydraulic oil, gear oil, grease, compressor oil, and more from Valvoline, PETRONAS, and Monroe.",
+    "BizHero is an authorized distributor of Valvoline, PETRONAS, and Monroe lubricants. Explore our trusted brand partnerships for automotive and industrial applications.",
 };
 
-const ProductsPage = () => {
+const BrandsPage = () => {
   return (
     <>
       <section className="relative overflow-hidden bg-primary pt-[120px] pb-20 md:pt-[130px] lg:pt-[160px]">
@@ -19,12 +19,12 @@ const ProductsPage = () => {
             <div className="w-full px-4">
               <div className="mx-auto max-w-[780px] text-center">
                 <h1 className="mb-6 text-3xl font-bold leading-snug text-white sm:text-4xl sm:leading-snug lg:text-5xl lg:leading-[1.2]">
-                  Our Product Range
+                  Our Trusted Brands
                 </h1>
                 <p className="mx-auto mb-9 max-w-[600px] text-base font-medium text-white sm:text-lg sm:leading-[1.44]">
-                  Comprehensive range of automotive and industrial lubricants
-                  from Valvoline, PETRONAS, and Monroe. Browse by category to
-                  find the right product for your application.
+                  BizHero is an authorized distributor of world-class lubricant
+                  brands, bringing you quality products backed by decades of
+                  research and innovation.
                 </p>
               </div>
             </div>
@@ -34,31 +34,21 @@ const ProductsPage = () => {
 
       <section className="py-20 lg:py-[120px]">
         <div className="container">
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {productCategories.map((category) => (
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+            {brands.map((brand) => (
               <Link
-                key={category.slug}
-                href={`/products/${category.slug}`}
+                key={brand.slug}
+                href={`/brands/${brand.slug}`}
                 className="group rounded-xl border border-stroke bg-white p-8 shadow-1 transition duration-300 hover:shadow-xl"
               >
-                <h2 className="mb-4 text-xl font-bold text-dark group-hover:text-primary">
-                  {category.title}
+                <h2 className="mb-4 text-2xl font-bold text-dark group-hover:text-primary">
+                  {brand.name}
                 </h2>
-                <p className="mb-4 text-base leading-relaxed text-body-color line-clamp-3">
-                  {category.description}
+                <p className="mb-6 text-base leading-relaxed text-body-color line-clamp-4">
+                  {brand.description}
                 </p>
-                <div className="flex flex-wrap gap-2">
-                  {category.applications.slice(0, 3).map((app, i) => (
-                    <span
-                      key={i}
-                      className="inline-flex rounded-full bg-primary/10 px-3 py-1 text-xs font-medium text-primary"
-                    >
-                      {app}
-                    </span>
-                  ))}
-                </div>
-                <div className="mt-4 flex items-center text-sm font-semibold text-primary">
-                  View Details
+                <div className="flex items-center text-sm font-semibold text-primary">
+                  View Products
                   <svg
                     className="ml-1 h-4 w-4 transition group-hover:translate-x-1"
                     fill="none"
@@ -84,4 +74,4 @@ const ProductsPage = () => {
   );
 };
 
-export default ProductsPage;
+export default BrandsPage;
