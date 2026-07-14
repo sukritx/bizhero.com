@@ -81,7 +81,7 @@ const OurWork = () => {
         <div className="mt-12 text-center">
           <Link
             href="/services"
-            className="inline-flex items-center justify-center rounded-lg bg-primary px-8 py-3.5 text-base font-bold text-white transition hover:bg-primary/90"
+            className="inline-flex items-center justify-center bg-primary px-8 py-3.5 text-base font-bold text-white transition hover:bg-primary/90"
           >
             View All Our Work
             <svg

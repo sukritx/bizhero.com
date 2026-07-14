@@ -17,13 +17,13 @@ const CallToAction = () => {
                 <div className="flex flex-wrap items-center justify-center gap-4">
                   <a
                     href="tel:3234102068"
-                    className="inline-flex items-center justify-center rounded-md bg-white px-7 py-3 text-base font-bold text-dark shadow-1 transition duration-300 ease-in-out hover:bg-gray-2"
+                    className="inline-flex items-center justify-center bg-white px-7 py-3 text-base font-bold text-dark shadow-1 transition duration-300 ease-in-out hover:bg-gray-2"
                   >
                     Call (323) 410-2068
                   </a>
                   <Link
                     href="/contact"
-                    className="inline-flex items-center justify-center rounded-md border border-white px-7 py-3 text-base font-bold text-white transition duration-300 ease-in-out hover:bg-white/10"
+                    className="inline-flex items-center justify-center border border-white px-7 py-3 text-base font-bold text-white transition duration-300 ease-in-out hover:bg-white/10"
                   >
                     Get a Free Estimate
                   </Link>

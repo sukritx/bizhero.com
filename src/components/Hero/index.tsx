@@ -62,7 +62,7 @@ const Hero = () => {
                   <div className="mt-4 sm:mt-0 sm:absolute sm:inset-y-0 sm:right-0 sm:flex sm:items-center sm:pr-2">
                     <Link
                       href="/contact"
-                      className="inline-flex px-6 py-3 text-lg font-bold text-white transition-all duration-200 bg-primary rounded-lg focus:outline-none focus:bg-primary/80 hover:bg-primary/80"
+                      className="inline-flex px-6 py-3 text-lg font-bold text-white transition-all duration-200 bg-primary focus:outline-none focus:bg-primary/80 hover:bg-primary/80"
                     >
                       Get Free Estimate
                     </Link>
@@ -172,7 +172,7 @@ const Hero = () => {
                   <button
                     type="submit"
                     disabled={status === "loading"}
-                    className="w-full rounded-lg bg-primary px-6 py-3 text-base font-bold text-white transition duration-300 ease-in-out hover:bg-primary/80 disabled:opacity-60"
+                    className="w-full bg-primary px-6 py-3 text-base font-bold text-white transition duration-300 ease-in-out hover:bg-primary/80 disabled:opacity-60"
                   >
                     {status === "loading" ? "Sending..." : "Send"}
                   </button>

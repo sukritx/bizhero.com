@@ -118,7 +118,7 @@ const ReviewRequest = () => {
             <button
               type="submit"
               disabled={status === "loading"}
-              className="w-full rounded-lg bg-primary px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-primary/90 disabled:opacity-60"
+              className="w-full bg-primary px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-primary/90 disabled:opacity-60"
             >
               {status === "loading" ? "Sending..." : "Send Request"}
             </button>

@@ -40,13 +40,13 @@ const Products = () => {
             <div className="flex flex-wrap items-center justify-center gap-4">
               <Link
                 href="/services"
-                className="inline-flex items-center justify-center rounded-md bg-primary px-7 py-3 text-base font-bold text-white transition duration-300 hover:bg-primary/90"
+                className="inline-flex items-center justify-center bg-primary px-7 py-3 text-base font-bold text-white transition duration-300 hover:bg-primary/90"
               >
                 View All Services
               </Link>
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center rounded-md border border-stroke bg-white px-7 py-3 text-base font-bold text-dark transition duration-300 hover:border-primary hover:text-primary dark:border-dark-3 dark:bg-dark-2 dark:text-white"
+                className="inline-flex items-center justify-center border border-stroke bg-white px-7 py-3 text-base font-bold text-dark transition duration-300 hover:border-primary hover:text-primary dark:border-dark-3 dark:bg-dark-2 dark:text-white"
               >
                 Request Free Estimate
               </Link>

@@ -148,7 +148,7 @@ const ServiceAreasPage = () => {
                 </div>
                 <Link
                   href="/contact"
-                  className="inline-flex items-center justify-center rounded-md bg-primary px-6 py-3 text-base font-bold text-white transition duration-300 hover:bg-primary/90"
+                  className="inline-flex items-center justify-center bg-primary px-6 py-3 text-base font-bold text-white transition duration-300 hover:bg-primary/90"
                 >
                   Request Service in {area.title}
                 </Link>
@@ -165,7 +165,7 @@ const ServiceAreasPage = () => {
             </p>
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center rounded-md bg-primary px-7 py-3 text-base font-bold text-white transition duration-300 hover:bg-primary/90"
+              className="inline-flex items-center justify-center bg-primary px-7 py-3 text-base font-bold text-white transition duration-300 hover:bg-primary/90"
             >
               Discuss Your Project
             </Link>

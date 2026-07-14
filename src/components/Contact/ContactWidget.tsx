@@ -166,7 +166,7 @@ export default function ContactWidget() {
 
               <button
                 onClick={() => setView("form")}
-                className="flex w-full items-center justify-center gap-2 rounded-md bg-primary px-6 py-2.5 text-sm font-bold text-white transition duration-300 hover:bg-primary/90"
+                className="flex w-full items-center justify-center gap-2 bg-primary px-6 py-2.5 text-sm font-bold text-white transition duration-300 hover:bg-primary/90"
               >
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" />
@@ -236,7 +236,7 @@ export default function ContactWidget() {
                   <button
                     type="submit"
                     disabled={status === "loading"}
-                    className="w-full rounded-md bg-primary px-6 py-2.5 text-sm font-bold text-white transition duration-300 hover:bg-primary/90 disabled:opacity-60"
+                    className="w-full bg-primary px-6 py-2.5 text-sm font-bold text-white transition duration-300 hover:bg-primary/90 disabled:opacity-60"
                   >
                     {status === "loading" ? "Sending..." : "Send Message"}
                   </button>
@@ -255,7 +255,7 @@ export default function ContactWidget() {
         )}
         <button
           onClick={handleOpen}
-          className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-primary text-white shadow-lg transition duration-300 hover:bg-primary/90 hover:scale-105"
+          className="flex h-14 w-14 shrink-0 items-center justify-center bg-primary text-white shadow-lg transition duration-300 hover:bg-primary/90 hover:scale-105"
           aria-label={open ? "Close contact form" : "Open contact form"}
         >
           {open ? (

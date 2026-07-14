@@ -175,7 +175,7 @@ const Footer = () => {
                </p>
                <a
                  href="tel:3234102068"
-                 className="inline-flex items-center justify-center rounded-lg bg-primary px-7 py-3 text-base font-bold text-white transition hover:bg-primary/90"
+                 className="inline-flex items-center justify-center bg-primary px-7 py-3 text-base font-bold text-white transition hover:bg-primary/90"
                >
                  (323) 410-2068
                </a>

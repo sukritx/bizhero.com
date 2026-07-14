@@ -149,7 +149,7 @@ const Header = () => {
                     <Link
                       href="/contact"
                       onClick={navbarToggleHandler}
-                      className="rounded-lg bg-primary px-6 py-3 text-center text-base font-bold text-white duration-300 ease-in-out hover:bg-primary/90"
+                      className="bg-primary px-6 py-3 text-center text-base font-bold text-white duration-300 ease-in-out hover:bg-primary/90"
                     >
                       Get a Free Estimate
                     </Link>
@@ -165,7 +165,7 @@ const Header = () => {
                 </a>
                 <Link
                   href="/contact"
-                  className="rounded-lg bg-primary px-6 py-3 text-base font-bold text-white duration-300 ease-in-out hover:bg-primary/90"
+                  className="bg-primary px-6 py-3 text-base font-bold text-white duration-300 ease-in-out hover:bg-primary/90"
                 >
                   Get a Free Estimate
                 </Link>
