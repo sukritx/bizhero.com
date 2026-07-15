@@ -1,8 +1,14 @@
+import Image from "next/image";
 import Link from "next/link";
 import CallToAction from "@/components/CallToAction";
 import { productCategories, getProductBySlug } from "@/data/productsData";
+import { brands } from "@/data/brandsData";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
+
+const brandLogoMap = Object.fromEntries(
+  brands.map((b) => [b.name, b.logo]),
+);
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -83,7 +89,14 @@ const ProductPage = async ({ params }: Props) => {
                     key={i}
                     className="rounded-xl border border-stroke bg-white p-6 shadow-1"
                   >
-                    <h3 className="mb-4 text-xl font-bold text-dark">
+                    <h3 className="mb-4 flex items-center gap-3 text-xl font-bold text-dark">
+                      <Image
+                        src={brandLogoMap[brand.name] || ""}
+                        alt={brand.name}
+                        width={80}
+                        height={32}
+                        className="h-8 w-auto object-contain"
+                      />
                       {brand.name}
                     </h3>
                     <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2">
@@ -122,7 +135,7 @@ const ProductPage = async ({ params }: Props) => {
                 Request a Quote
               </Link>
               <Link
-                href="/products/engine-oil"
+                href="/products"
                 className="inline-flex items-center justify-center border border-stroke bg-white px-7 py-3 text-base font-bold text-dark transition duration-300 hover:border-primary hover:text-primary"
               >
                 View All Products

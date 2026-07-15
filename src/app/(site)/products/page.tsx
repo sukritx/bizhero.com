@@ -1,7 +1,13 @@
+import Image from "next/image";
 import Link from "next/link";
 import CallToAction from "@/components/CallToAction";
 import { productCategories } from "@/data/productsData";
+import { brands } from "@/data/brandsData";
 import { Metadata } from "next";
+
+const brandLogoMap = Object.fromEntries(
+  brands.map((b) => [b.name, b.logo]),
+);
 
 export const metadata: Metadata = {
   title:
@@ -55,6 +61,18 @@ const ProductsPage = () => {
                     >
                       {app}
                     </span>
+                  ))}
+                </div>
+                <div className="mt-4 flex items-center gap-3">
+                  {category.brands.map((b) => (
+                    <Image
+                      key={b.name}
+                      src={brandLogoMap[b.name] || ""}
+                      alt={b.name}
+                      width={80}
+                      height={32}
+                      className="h-8 w-auto object-contain"
+                    />
                   ))}
                 </div>
                 <div className="mt-4 flex items-center text-sm font-semibold text-primary">

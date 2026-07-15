@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import CallToAction from "@/components/CallToAction";
 import { brands } from "@/data/brandsData";
@@ -41,6 +42,15 @@ const BrandsPage = () => {
                 href={`/brands/${brand.slug}`}
                 className="group rounded-xl border border-stroke bg-white p-8 shadow-1 transition duration-300 hover:shadow-xl"
               >
+                <div className="mb-6 flex h-16 items-center">
+                  <Image
+                    src={brand.logo}
+                    alt={brand.name}
+                    width={120}
+                    height={48}
+                    className="h-12 w-auto object-contain"
+                  />
+                </div>
                 <h2 className="mb-4 text-2xl font-bold text-dark group-hover:text-primary">
                   {brand.name}
                 </h2>

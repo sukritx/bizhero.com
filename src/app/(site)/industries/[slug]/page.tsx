@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import CallToAction from "@/components/CallToAction";
 import { industries, getIndustryBySlug } from "@/data/industriesData";
@@ -29,8 +30,17 @@ const IndustryPage = async ({ params }: Props) => {
 
   return (
     <>
-      <section className="relative overflow-hidden bg-primary pt-[120px] pb-20 md:pt-[130px] lg:pt-[160px]">
-        <div className="container">
+      <section className="relative flex min-h-[50vh] items-center overflow-hidden pt-[120px] pb-20 md:min-h-[55vh] md:pt-[160px] md:pb-28 lg:min-h-[60vh] lg:pt-[200px] lg:pb-32">
+        <Image
+          src={industry.image}
+          alt={industry.title}
+          fill
+          className="object-cover"
+          priority
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-primary/10" />
+        <div className="container relative z-10">
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4">
               <div className="mx-auto max-w-[780px] text-center">

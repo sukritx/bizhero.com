@@ -18,7 +18,7 @@ export const brands: Brand[] = [
     slug: "valvoline",
     name: "Valvoline",
     description: "One of the oldest and most trusted lubricant brands in the world. BizHero is an authorized distributor of Valvoline automotive and industrial lubricants, offering a complete range of engine oils, transmission fluids, gear oils, greases, brake fluids, coolants, hydraulic oils, and industrial gear oils.",
-    logo: "/images/brands/valvoline.png",
+    logo: "/images/brands/valvoline.svg",
     products: [
       {
         name: "Engine Oil",
@@ -54,7 +54,7 @@ export const brands: Brand[] = [
     slug: "petronas",
     name: "PETRONAS",
     description: "PETRONAS provides world-class industrial and commercial lubricant solutions. BizHero distributes PETRONAS products for heavy-duty diesel engines, industrial hydraulic systems, compressors, and specialized industrial applications.",
-    logo: "/images/brands/petronas.png",
+    logo: "/images/brands/petronas.svg",
     products: [
       {
         name: "Engine Oil",
