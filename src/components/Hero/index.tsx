@@ -56,7 +56,7 @@ const Hero = () => {
                   Explore Products
                 </Link>
                 <Link
-                  href="/services/oil-change"
+                  href="/services"
                   className="inline-flex border border-white px-6 py-3 text-base font-bold text-white transition-all duration-200 hover:bg-white hover:text-dark"
                 >
                   Our Services

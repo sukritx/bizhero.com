@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import CallToAction from "@/components/CallToAction";
 import { services, getServiceBySlug } from "@/data/servicesData";
@@ -50,6 +51,15 @@ const ServicePage = async ({ params }: Props) => {
         <div className="container">
           <div className="mx-auto max-w-[900px]">
             <div className="mb-12 rounded-xl bg-gray-50 p-8 sm:p-10">
+              <div className="relative mb-6 h-64 w-full overflow-hidden rounded-lg sm:h-80">
+                <Image
+                  src={service.image}
+                  alt={service.title}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 900px"
+                />
+              </div>
               <h2 className="mb-6 text-2xl font-bold text-dark">
                 About This Service
               </h2>

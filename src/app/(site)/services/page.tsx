@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import CallToAction from "@/components/CallToAction";
 import { services } from "@/data/servicesData";
@@ -41,6 +42,15 @@ const ServicesPage = () => {
                 href={`/services/${service.slug}`}
                 className="group rounded-xl border border-stroke bg-white p-8 shadow-1 transition duration-300 hover:shadow-xl"
               >
+                <div className="relative mb-5 h-48 w-full overflow-hidden rounded-lg">
+                  <Image
+                    src={service.image}
+                    alt={service.title}
+                    fill
+                    className="object-cover transition duration-500 group-hover:scale-105"
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                  />
+                </div>
                 <h2 className="mb-4 text-2xl font-bold text-dark group-hover:text-primary">
                   {service.title}
                 </h2>
