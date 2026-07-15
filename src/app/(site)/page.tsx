@@ -1,4 +1,5 @@
 import AboutUs from "@/components/AboutUs";
+import BusinessSolutions from "@/components/BusinessSolutions";
 import HomeBlogSection from "@/components/Blog/HomeBlogSection";
 import HomeServices from "@/components/HomeServices";
 import CallToAction from "@/components/CallToAction";
@@ -31,6 +32,7 @@ export default function Home() {
     <main>
       <Hero />
       <AboutUs />
+      <BusinessSolutions />
       <OurServices />
       <HomeServices />
       <HomeBlogSection posts={posts} />
