@@ -28,9 +28,9 @@ export default function ContactWidget() {
               <Image
                 src="/images/brands/bizhero-logo.jpg"
                 alt="BizHero"
-                width={36}
-                height={36}
-                className="shrink-0"
+                width={80}
+                height={21}
+                className="h-auto w-20 shrink-0"
               />
               <h3 className="text-base font-semibold text-dark dark:text-white">
                 Let us know if you have any questions!

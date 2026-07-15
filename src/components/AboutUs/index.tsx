@@ -52,6 +52,7 @@ const AboutUs = () => {
                 src="/images/about/about-bizhero.png"
                 alt="BizHero Lubricants"
                 fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
                 className="h-full w-full object-cover object-center"
               />
             </div>
