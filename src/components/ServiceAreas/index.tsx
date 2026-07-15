@@ -120,7 +120,7 @@ const ServiceAreas = () => {
                 We may still serve your location. Contact us to find out if we can help with your plumbing needs.
               </p>
               <Link
-                href="/contact"
+                href="https://share-na2.hsforms.com/283IRhHVgQLuB-uFLk7V9cQ40ae96"
                 className="inline-flex items-center justify-center bg-primary px-5 py-2.5 text-sm font-bold text-white transition hover:bg-primary/90"
               >
                 Contact Us

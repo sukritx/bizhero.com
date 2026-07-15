@@ -147,7 +147,7 @@ const ServiceAreasPage = () => {
                   </div>
                 </div>
                 <Link
-                  href="/contact"
+                  href="https://share-na2.hsforms.com/283IRhHVgQLuB-uFLk7V9cQ40ae96"
                   className="inline-flex items-center justify-center bg-primary px-6 py-3 text-base font-bold text-white transition duration-300 hover:bg-primary/90"
                 >
                   Request Service in {area.title}
@@ -164,7 +164,7 @@ const ServiceAreasPage = () => {
               While our daily operations focus on Southern California, our trenchless pipe relining (CIPP) capabilities are available for industrial and municipal projects nationwide. Contact us to discuss your trenchless project regardless of location.
             </p>
             <Link
-              href="/contact"
+              href="https://share-na2.hsforms.com/283IRhHVgQLuB-uFLk7V9cQ40ae96"
               className="inline-flex items-center justify-center bg-primary px-7 py-3 text-base font-bold text-white transition duration-300 hover:bg-primary/90"
             >
               Discuss Your Project

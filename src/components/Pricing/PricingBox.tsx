@@ -49,7 +49,7 @@ const PricingBox = ({ product }: { product: Price }) => {
         </div>
         <div className="w-full text-center">
           <Link
-            href="/contact"
+            href="https://share-na2.hsforms.com/283IRhHVgQLuB-uFLk7V9cQ40ae96"
             className="block w-full bg-primary py-4 text-center text-xl font-bold text-white transition duration-300 hover:bg-primary/90"
           >
             Request Free Estimate

@@ -140,7 +140,7 @@ const Header = () => {
                   </ul>
                   <div className="mt-4 flex flex-col gap-3 border-t border-stroke pt-4 lg:hidden">
                     <Link
-                      href="/contact"
+                       href="https://share-na2.hsforms.com/283IRhHVgQLuB-uFLk7V9cQ40ae96"
                       onClick={navbarToggleHandler}
                       className="bg-primary px-6 py-3 text-center text-base font-bold text-white duration-300 ease-in-out hover:bg-primary/90"
                     >
@@ -151,7 +151,7 @@ const Header = () => {
               </div>
               <div className="hidden items-center justify-end pr-16 sm:flex lg:pr-0">
                 <Link
-                  href="/contact"
+                   href="https://share-na2.hsforms.com/283IRhHVgQLuB-uFLk7V9cQ40ae96"
                   className="bg-primary px-6 py-3 text-base font-bold text-white duration-300 ease-in-out hover:bg-primary/90"
                 >
                   Request a Quote

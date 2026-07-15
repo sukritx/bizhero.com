@@ -93,7 +93,7 @@ const ServicesPage = () => {
               best maintenance approach. Contact us for a consultation.
             </p>
             <Link
-              href="/contact"
+              href="https://share-na2.hsforms.com/283IRhHVgQLuB-uFLk7V9cQ40ae96"
               className="inline-flex items-center justify-center bg-primary px-7 py-3 text-base font-bold text-white transition duration-300 hover:bg-primary/90"
             >
               Contact Us

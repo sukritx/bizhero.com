@@ -106,7 +106,7 @@ const Footer = () => {
                 <li><Link href="/brands" className="mb-3 inline-block text-base text-gray-600 hover:text-primary">Our Brands</Link></li>
                 <li><Link href="/blogs" className="mb-3 inline-block text-base text-gray-600 hover:text-primary">Blog</Link></li>
                 <li><Link href="/faqs" className="mb-3 inline-block text-base text-gray-600 hover:text-primary">FAQs</Link></li>
-                <li><Link href="/contact" className="mb-3 inline-block text-base text-gray-600 hover:text-primary">Contact</Link></li>
+                <li><a href="https://share-na2.hsforms.com/283IRhHVgQLuB-uFLk7V9cQ40ae96" className="mb-3 inline-block text-base text-gray-600 hover:text-primary">Contact</a></li>
               </ul>
             </div>
           </div>
@@ -119,7 +119,7 @@ const Footer = () => {
                 Need help choosing the right lubricant? Our technical team is ready to assist with product selection and maintenance solutions.
               </p>
               <Link
-                href="/contact"
+                href="https://share-na2.hsforms.com/283IRhHVgQLuB-uFLk7V9cQ40ae96"
                 className="inline-flex items-center justify-center bg-primary px-7 py-3 text-base font-bold text-white transition hover:bg-primary/90"
               >
                 Request a Quote

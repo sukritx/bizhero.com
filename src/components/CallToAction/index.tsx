@@ -27,7 +27,7 @@ const CallToAction = () => {
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4">
             <Link
-              href="/contact"
+              href="https://share-na2.hsforms.com/283IRhHVgQLuB-uFLk7V9cQ40ae96"
               className="inline-flex items-center justify-center bg-white px-8 py-4 text-base font-bold text-dark transition duration-300 hover:bg-white/90"
             >
               Request a Quote

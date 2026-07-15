@@ -129,7 +129,7 @@ const ProductPage = async ({ params }: Props) => {
 
             <div className="mt-12 flex flex-wrap items-center justify-center gap-4 border-t border-stroke pt-10">
               <Link
-                href="/contact"
+                href="https://share-na2.hsforms.com/283IRhHVgQLuB-uFLk7V9cQ40ae96"
                 className="inline-flex items-center justify-center bg-primary px-7 py-3 text-base font-bold text-white transition duration-300 hover:bg-primary/90"
               >
                 Request a Quote

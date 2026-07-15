@@ -1,33 +1,6 @@
-"use client";
-
-import { useState, FormEvent } from "react";
-import submitContactForm from "@/utils/submitContactForm";
+import Link from "next/link";
 
 const Contact = () => {
-  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
-
-  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setStatus("loading");
-    const form = e.currentTarget;
-    const data = {
-      firstName: (form.firstName as HTMLInputElement).value,
-      lastName: (form.lastName as HTMLInputElement).value,
-      phone: (form.phone as HTMLInputElement).value,
-      email: (form.email as HTMLInputElement).value,
-      message: (form.message as HTMLTextAreaElement).value,
-      source: "contact",
-    };
-
-    try {
-      await submitContactForm(data);
-      setStatus("success");
-      form.reset();
-    } catch {
-      setStatus("error");
-    }
-  };
-
   return (
     <section id="contact" className="relative py-20 md:py-[120px]">
       <div className="absolute left-0 top-0 -z-[1] h-full w-full dark:bg-dark"></div>
@@ -103,110 +76,15 @@ const Contact = () => {
               <h3 className="mb-8 text-2xl font-semibold text-dark dark:text-white md:text-[28px] md:leading-[1.42]">
                 Request a Quote
               </h3>
-              {status === "success" ? (
-                <p className="text-center text-lg font-medium text-green-600">
-                  Thank you! We&apos;ll be in touch soon.
-                </p>
-              ) : (
-                <form onSubmit={handleSubmit}>
-                  <div className="mb-[22px] flex gap-4">
-                    <div className="w-1/2">
-                      <label
-                        htmlFor="contact-firstName"
-                        className="mb-4 block text-sm text-body-color dark:text-dark-6"
-                      >
-                        First Name*
-                      </label>
-                      <input
-                        type="text"
-                        name="firstName"
-                        id="contact-firstName"
-                        placeholder="John"
-                        required
-                        className="w-full border-0 border-b border-[#f1f1f1] bg-transparent pb-3 text-dark placeholder:text-body-color/60 focus:border-primary focus:outline-none dark:border-dark-3 dark:text-white"
-                      />
-                    </div>
-                    <div className="w-1/2">
-                      <label
-                        htmlFor="contact-lastName"
-                        className="mb-4 block text-sm text-body-color dark:text-dark-6"
-                      >
-                        Last Name*
-                      </label>
-                      <input
-                        type="text"
-                        name="lastName"
-                        id="contact-lastName"
-                        placeholder="Smith"
-                        required
-                        className="w-full border-0 border-b border-[#f1f1f1] bg-transparent pb-3 text-dark placeholder:text-body-color/60 focus:border-primary focus:outline-none dark:border-dark-3 dark:text-white"
-                      />
-                    </div>
-                  </div>
-                  <div className="mb-[22px]">
-                    <label
-                      htmlFor="contact-phone"
-                      className="mb-4 block text-sm text-body-color dark:text-dark-6"
-                    >
-                      Phone*
-                    </label>
-                    <input
-                      type="tel"
-                      name="phone"
-                      id="contact-phone"
-                      placeholder="(323) 555-1234"
-                      required
-                      className="w-full border-0 border-b border-[#f1f1f1] bg-transparent pb-3 text-dark placeholder:text-body-color/60 focus:border-primary focus:outline-none dark:border-dark-3 dark:text-white"
-                    />
-                  </div>
-                  <div className="mb-[22px]">
-                    <label
-                      htmlFor="contact-email"
-                      className="mb-4 block text-sm text-body-color dark:text-dark-6"
-                    >
-                      Email
-                    </label>
-                    <input
-                      type="email"
-                      name="email"
-                      id="contact-email"
-                      placeholder="john@example.com"
-                      className="w-full border-0 border-b border-[#f1f1f1] bg-transparent pb-3 text-dark placeholder:text-body-color/60 focus:border-primary focus:outline-none dark:border-dark-3 dark:text-white"
-                    />
-                  </div>
-
-                  <div className="mb-[30px]">
-                    <label
-                      htmlFor="contact-message"
-                      className="mb-4 block text-sm text-body-color dark:text-dark-6"
-                    >
-                      How Can We Help You?*
-                    </label>
-                    <textarea
-                      name="message"
-                      id="contact-message"
-                      rows={3}
-                      placeholder="Tell us about your lubricant or maintenance needs..."
-                      required
-                      className="w-full resize-none border-0 border-b border-[#f1f1f1] bg-transparent pb-3 text-dark placeholder:text-body-color/60 focus:border-primary focus:outline-none dark:border-dark-3 dark:text-white"
-                    ></textarea>
-                  </div>
-                  {status === "error" && (
-                    <p className="mb-3 text-sm text-red-600">
-                      Something went wrong. Please try again.
-                    </p>
-                  )}
-                  <div className="mb-0">
-                    <button
-                      type="submit"
-                      disabled={status === "loading"}
-                      className="inline-flex w-full items-center justify-center bg-primary px-10 py-3 text-base font-bold text-white transition duration-300 ease-in-out hover:bg-primary/90 disabled:opacity-60"
-                    >
-                      {status === "loading" ? "Sending..." : "Send"}
-                    </button>
-                  </div>
-                </form>
-              )}
+              <p className="mb-8 text-base leading-relaxed text-body-color dark:text-dark-6">
+                Fill out our quick quote form and our team will get back to you with pricing and product recommendations tailored to your needs.
+              </p>
+              <Link
+                href="https://share-na2.hsforms.com/283IRhHVgQLuB-uFLk7V9cQ40ae96"
+                className="inline-flex w-full items-center justify-center bg-primary px-10 py-3 text-base font-bold text-white transition duration-300 ease-in-out hover:bg-primary/90"
+              >
+                Get a Quote
+              </Link>
             </div>
           </div>
         </div>

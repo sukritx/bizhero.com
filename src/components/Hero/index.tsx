@@ -100,7 +100,7 @@ const Hero = () => {
               </ul>
               <div className="mt-8">
                 <Link
-                  href="/contact"
+                   href="https://share-na2.hsforms.com/283IRhHVgQLuB-uFLk7V9cQ40ae96"
                   className="block w-full bg-primary px-6 py-3 text-center text-base font-bold text-white transition duration-300 ease-in-out hover:bg-primary/80"
                 >
                   Request a Quote

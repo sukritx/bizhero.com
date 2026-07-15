@@ -1,3 +1,4 @@
+import Image from "next/image";
 import CallToAction from "@/components/CallToAction";
 import { Metadata } from "next";
 import Link from "next/link";
@@ -32,6 +33,15 @@ const AboutPage = () => {
         <div className="container">
           <div className="mx-auto max-w-[900px]">
             <div className="mb-16">
+              <div className="relative mb-10 h-64 w-full overflow-hidden rounded-xl sm:h-80 lg:h-96">
+                <Image
+                  src="/images/about/about-bizhero.png"
+                  alt="BizHero Lubricants Team"
+                  fill
+                  className="object-contain"
+                  sizes="(max-width: 768px) 100vw, 900px"
+                />
+              </div>
               <h2 className="mb-6 text-3xl font-bold text-dark sm:text-4xl">Who We Are</h2>
               <p className="mb-6 text-lg leading-relaxed text-body-color">
                 BizHero Lubricants is an authorized distributor of world-class lubricant brands including Valvoline, PETRONAS, and Monroe. We serve automotive workshops, commercial fleets, industrial manufacturers, construction companies, agricultural operations, and heavy equipment operators.
