@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const Footer = () => {
@@ -11,11 +12,31 @@ const Footer = () => {
           <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-4/12 xl:w-3/12">
             <div className="mb-10 w-full">
               <Link href="/" className="mb-6 inline-block">
-                <span className="text-xl font-bold text-dark">BizHero Lubricants</span>
+                <Image
+                  src="/images/brands/bizhero-logo.jpg"
+                  alt="Biz Hero"
+                  width={180}
+                  height={48}
+                  className="h-auto w-[180px]"
+                  priority
+                />
               </Link>
-              <p className="mb-8 max-w-[270px] text-base text-gray-800">
-                Your trusted industrial and automotive lubricant supplier. Authorized distributor of Valvoline, PETRONAS, and Monroe products.
-              </p>
+              <div className="mb-8 max-w-[270px] space-y-3 text-base text-gray-800">
+                <div>
+                  <p>บริษัท บิซ ฮีโร่ จำกัด</p>
+                  <p>52/6 ซ.รามคำแหง 90 แขวงสะพานสูง</p>
+                  <p>เขตสะพานสูง กรุงเทพมหานคร 10240</p>
+                  <p>โทร 082-936-5416</p>
+                  <p>E-mail : info@biz-hero.com</p>
+                </div>
+                <div className="border-t border-gray-200 pt-3">
+                  <p>Biz Hero Co.,Ltd</p>
+                  <p>52/6 Ramkhamheang 90 Saphan Sung,</p>
+                  <p>Saphan Sung, Bangkok 10240</p>
+                  <p>โทร 082-936-5416</p>
+                  <p>E-mail : info@biz-hero.com</p>
+                </div>
+              </div>
               <div className="-mx-3 flex items-center">
                 <Link
                   aria-label="Facebook"
