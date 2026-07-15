@@ -8,7 +8,7 @@ const SingleBlog = ({ blog }: { blog: Blog }) => {
 
   return (
     <div className="wow fadeInUp group mb-10" data-wow-delay=".1s">
-      <div className="mb-8 overflow-hidden rounded">
+      <div className="relative mb-8 overflow-hidden rounded">
         <Link href={`/blogs/${slug}`} aria-label="blog cover" className="block">
           <Image
             src={coverImage!}
@@ -17,6 +17,12 @@ const SingleBlog = ({ blog }: { blog: Blog }) => {
             width={408}
             height={272}
           />
+        </Link>
+        <Link
+          href={`/blogs/${slug}`}
+          className="absolute right-3 top-3 rounded bg-primary px-3 py-1.5 text-xs font-semibold text-white transition hover:opacity-90"
+        >
+          Read More &rarr;
         </Link>
       </div>
       <div>

@@ -4,9 +4,9 @@ import { getAllPosts } from "@/utils/markdown";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Plumbing Tips & Advice Blog | A-1 Total Service Plumbing",
+  title: "Lubrication Insights Blog | BizHero Lubricants",
   description:
-    "Expert plumbing tips, maintenance advice, and industry insights from A-1 Total Service Plumbing. Learn about drain care, water heaters, trenchless repair, and more for your Los Angeles or Orange County home.",
+    "Expert insights on industrial lubricants, used oil analysis, engine maintenance, and equipment reliability from BizHero Lubricants — the authorized distributor of Valvoline, PETRONAS, and Monroe.",
 };
 
 const Blog = () => {
