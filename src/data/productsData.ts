@@ -19,8 +19,8 @@ export const productCategories: ProductCategory[] = [
     applications: ["Passenger cars", "Diesel pickup", "Trucks", "Commercial fleets", "NGV vehicles", "Heavy-duty diesel"],
     icon: "engine",
     brands: [
-      { name: "Valvoline", items: ["Power Max Series 7", "Power Max Series 6", "Power Max Series 5 Plus", "Power Max Series 3 Plus", "Power Commonrail 10W-30", "All Fleet HD 15W-40", "GEO Ultra (NGV / CNG)"] },
-      { name: "PETRONAS", items: ["Urania 3000 LS 15W-40", "Urania 3000X 15W-40", "Urania 3000 15W-40", "Urania 1000E 15W-40", "Urania 1000EHM 20W-50", "Urania 3000 NGV 10W-40"] }
+      { name: "PETRONAS", items: ["Urania 3000 LS 15W-40", "Urania 3000X 15W-40", "Urania 3000 15W-40", "Urania 1000E 15W-40", "Urania 1000EHM 20W-50", "Urania 3000 NGV 10W-40"] },
+      { name: "Valvoline", items: ["Power Max Series 7", "Power Max Series 6", "Power Max Series 5 Plus", "Power Max Series 3 Plus", "Power Commonrail 10W-30", "All Fleet HD 15W-40", "GEO Ultra (NGV / CNG)"] }
     ]
   },
   {
@@ -30,8 +30,8 @@ export const productCategories: ProductCategory[] = [
     applications: ["Hydraulic press", "Excavators", "Injection molding", "Hydraulic pumps", "Factory machinery"],
     icon: "hydraulic",
     brands: [
-      { name: "Valvoline", items: ["Ultramax HLP", "HVLP Hydraulic Oil", "HLP Conventional Hydraulic Oil"] },
-      { name: "PETRONAS", items: ["Hydraulic AW", "Hydraulic EP", "Hydraulic Series", "Hydraulic High VI", "Hydraulic High VI Zinc Free"] }
+      { name: "PETRONAS", items: ["Hydraulic AW", "Hydraulic EP", "Hydraulic Series", "Hydraulic High VI", "Hydraulic High VI Zinc Free"] },
+      { name: "Valvoline", items: ["Ultramax HLP", "HVLP Hydraulic Oil", "HLP Conventional Hydraulic Oil"] }
     ]
   },
   {
@@ -41,8 +41,8 @@ export const productCategories: ProductCategory[] = [
     applications: ["Industrial gearbox", "Differential", "Heavy machinery"],
     icon: "gear",
     brands: [
-      { name: "Valvoline", items: ["Drivetrain Transmission Oil", "GL5 Multigrade", "Industrial Gear Oil"] },
-      { name: "PETRONAS", items: ["GL4 Multigrade", "GL5 Multigrade", "GL5 Monograde", "Gear MEP"] }
+      { name: "PETRONAS", items: ["GL4 Multigrade", "GL5 Multigrade", "GL5 Monograde", "Gear MEP"] },
+      { name: "Valvoline", items: ["Drivetrain Transmission Oil", "GL5 Multigrade", "Industrial Gear Oil"] }
     ]
   },
   {
@@ -62,8 +62,8 @@ export const productCategories: ProductCategory[] = [
     applications: ["Brake systems"],
     icon: "brake",
     brands: [
-      { name: "Valvoline", items: ["DOT3", "DOT4"] },
-      { name: "PETRONAS", items: ["Tutela DOT3"] }
+      { name: "PETRONAS", items: ["Tutela DOT3"] },
+      { name: "Valvoline", items: ["DOT3", "DOT4"] }
     ]
   },
   {
@@ -73,8 +73,8 @@ export const productCategories: ProductCategory[] = [
     applications: ["Engine cooling", "Industrial cooling", "Radiator protection"],
     icon: "coolant",
     brands: [
-      { name: "Valvoline", items: ["Engine Coolant"] },
-      { name: "PETRONAS", items: ["Tutela Coolant"] }
+      { name: "PETRONAS", items: ["Tutela Coolant"] },
+      { name: "Valvoline", items: ["Engine Coolant"] }
     ]
   },
   {
@@ -84,8 +84,8 @@ export const productCategories: ProductCategory[] = [
     applications: ["Bearings", "Construction equipment", "Industrial machinery", "Heavy equipment"],
     icon: "grease",
     brands: [
-      { name: "Valvoline", items: ["Supreme Grease EP2", "Extreme EP2 Grease", "Amber Grease EP3"] },
-      { name: "PETRONAS", items: ["Grease LiX MEP", "Grease Li PT"] }
+      { name: "PETRONAS", items: ["Grease LiX MEP", "Grease Li PT"] },
+      { name: "Valvoline", items: ["Supreme Grease EP2", "Extreme EP2 Grease", "Amber Grease EP3"] }
     ]
   },
   {
