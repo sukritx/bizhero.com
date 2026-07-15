@@ -50,7 +50,7 @@ const Hero = () => {
               </div>
               <div className="mt-8 flex flex-wrap gap-4 sm:mt-10">
                 <Link
-                  href="/products/engine-oil"
+                  href="/products"
                   className="inline-flex bg-primary px-6 py-3 text-base font-bold text-white transition-all duration-200 hover:bg-primary/80"
                 >
                   Explore Products
