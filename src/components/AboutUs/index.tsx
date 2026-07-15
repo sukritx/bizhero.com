@@ -49,7 +49,7 @@ const AboutUs = () => {
           <div className="w-full px-4 lg:w-1/2">
             <div className="relative mb-10 h-[350px] overflow-hidden rounded-xl lg:mb-0 lg:h-[460px]">
               <Image
-                src="/images/about/about-image-01.jpg"
+                src="/images/about/about-bizhero.png"
                 alt="BizHero Lubricants"
                 fill
                 className="h-full w-full object-cover object-center"
