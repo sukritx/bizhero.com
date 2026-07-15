@@ -1,7 +1,9 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const services = [
   {
+    image: "/images/services/oil-change.jpeg",
     title: "Oil Change Service",
     description:
       "Professional oil change for fleet trucks, commercial vehicles, and industrial machinery using premium Valvoline and PETRONAS lubricants.",
@@ -25,6 +27,7 @@ const services = [
     ),
   },
   {
+    image: "/images/services/tank-cleaning.jpeg",
     title: "Sump Tank Cleaning",
     description:
       "Industrial cleaning for hydraulic tanks, oil storage tanks, and lubrication systems to remove sludge and contaminants.",
@@ -45,6 +48,7 @@ const services = [
     ),
   },
   {
+    image: "/images/services/oil-analysis.jpeg",
     title: "Used Oil Analysis",
     description:
       "Comprehensive oil testing to assess metal wear, contamination, and oil condition for predictive maintenance and early fault detection.",
@@ -92,8 +96,14 @@ const HomeServices = () => {
               key={i}
               className="group rounded-xl border border-gray-200 bg-white p-8 shadow-sm transition hover:shadow-lg"
             >
-              <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-lg bg-primary/10 text-primary transition duration-300 group-hover:bg-primary group-hover:text-white">
-                {service.icon}
+              <div className="relative mb-5 h-48 w-full overflow-hidden rounded-lg">
+                <Image
+                  src={service.image}
+                  alt={service.title}
+                  fill
+                  className="object-cover transition duration-500 group-hover:scale-105"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
               </div>
               <h3 className="mb-3 text-xl font-bold text-gray-900">
                 {service.title}
