@@ -28,7 +28,7 @@ export default async function IndustryPage({ params }: Props) {
     <>
       <section className="relative overflow-hidden bg-gray-900 pt-[160px] pb-32 md:pt-[200px] md:pb-40 lg:pt-[240px] lg:pb-48">
         <Image
-          src={`/images/industries/${slug}.jpeg`}
+          src={industry.image}
           alt=""
           fill
           className="object-cover object-center opacity-40"

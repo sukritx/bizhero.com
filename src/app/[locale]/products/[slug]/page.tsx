@@ -34,7 +34,7 @@ export default async function ProductPage({ params }: Props) {
     <>
       <section className="relative overflow-hidden bg-gray-900 pt-[160px] pb-32 md:pt-[200px] md:pb-40 lg:pt-[240px] lg:pb-48">
         <Image
-          src={`/images/industries/heavy-industry.jpeg`}
+          src="/images/products/gear2.jpeg"
           alt=""
           fill
           className="object-cover object-center opacity-40"
