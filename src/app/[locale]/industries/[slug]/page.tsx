@@ -1,6 +1,7 @@
 import { getDictionary, Locale } from "@/i18n/i18n";
 import CallToAction from "@/components/CallToAction";
 import { Metadata } from "next";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { industries, getIndustryBySlug } from "@/data/industriesData";
 import { t as tl, tArr } from "@/data/locale";
@@ -25,8 +26,16 @@ export default async function IndustryPage({ params }: Props) {
 
   return (
     <>
-      <section className="relative overflow-hidden bg-primary pt-[120px] pb-20 md:pt-[130px] lg:pt-[160px]">
-        <div className="container"><div className="mx-auto max-w-[780px] text-center">
+      <section className="relative overflow-hidden bg-gray-900 pt-[160px] pb-32 md:pt-[200px] md:pb-40 lg:pt-[240px] lg:pb-48">
+        <Image
+          src={`/images/industries/${slug}.jpeg`}
+          alt=""
+          fill
+          className="object-cover object-center opacity-40"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/30" />
+        <div className="container relative z-10"><div className="mx-auto max-w-[780px] text-center">
           <h1 className="mb-6 text-3xl font-bold text-white sm:text-4xl">{tl(industry.title, locale)}</h1>
           <p className="text-lg text-white/80">{tl(industry.description, locale)}</p>
         </div></div>
