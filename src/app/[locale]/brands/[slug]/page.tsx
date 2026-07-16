@@ -27,7 +27,7 @@ export default async function BrandPage({ params }: Props) {
     <>
       <section className="relative overflow-hidden bg-primary pt-[120px] pb-20 md:pt-[130px] lg:pt-[160px]">
         <div className="container"><div className="mx-auto max-w-[780px] text-center">
-          <img src={brand.logo} alt={brand.name} className="h-16 mx-auto mb-4 object-contain brightness-0 invert" />
+          <img src={brand.logo} alt={brand.name} className="h-16 mx-auto mb-4 object-contain" />
           <h1 className="mb-6 text-3xl font-bold text-white sm:text-4xl">{brand.name}</h1>
           <p className="text-lg text-white/80">{tl(brand.description, locale)}</p>
         </div></div>
