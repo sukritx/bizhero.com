@@ -193,4 +193,70 @@ export const productCategories: ProductCategory[] = [
       { name: "Monroe", items: ["Straight Oils for Metalworking"] },
     ],
   },
+  {
+    slug: "agricultural-oil",
+    title: { th: "น้ำมันเพื่อการเกษตร", en: "Agricultural Oil" },
+    description: {
+      th: "น้ำมันหล่อลื่นสำหรับเครื่องจักรกลการเกษตร รถแทรกเตอร์ รถเกี่ยวนวดข้าว และอุปกรณ์การเกษตรอื่นๆ ให้การปกป้องที่ดีเยี่ยมในสภาวะการทำงานหนักและฝุ่นละออง",
+      en: "Lubricants for agricultural machinery, tractors, harvesters, and farm equipment. Provides excellent protection under heavy loads and dusty operating conditions.",
+    },
+    applications: [
+      { th: "รถแทรกเตอร์", en: "Tractors" },
+      { th: "รถเกี่ยวนวดข้าว", en: "Harvesters" },
+      { th: "อุปกรณ์การเกษตร", en: "Farm equipment" },
+    ],
+    icon: "agriculture",
+    brands: [
+      { name: "PETRONAS", items: ["Tutela Multi UTTO 500 10W-30"] },
+    ],
+  },
+  {
+    slug: "turbine-oil",
+    title: { th: "น้ำมันเทอร์ไบน์", en: "Turbine Oil" },
+    description: {
+      th: "น้ำมันหล่อลื่นสำหรับกังหันก๊าซ กังหันไอน้ำ และเครื่องยนต์ก๊าซชีวภาพ ให้เสถียรภาพทางความร้อนและการป้องกันการสึกหรอที่ยอดเยี่ยมสำหรับการผลิตไฟฟ้า",
+      en: "Lubricants for gas turbines, steam turbines, and biogas engines. Provides excellent thermal stability and wear protection for power generation applications.",
+    },
+    applications: [
+      { th: "กังหันก๊าซ", en: "Gas turbines" },
+      { th: "กังหันไอน้ำ", en: "Steam turbines" },
+      { th: "เครื่องยนต์ก๊าซชีวภาพ", en: "Biogas engines" },
+    ],
+    icon: "turbine",
+    brands: [
+      { name: "PETRONAS", items: ["GEO BLG Series", "Jenteram G Series"] },
+    ],
+  },
+  {
+    slug: "industrial-circulation-oil",
+    title: { th: "น้ำมันหมุนเวียนอุตสาหกรรม", en: "Industrial Circulation Oil" },
+    description: {
+      th: "น้ำมันหล่อลื่นสำหรับระบบหมุนเวียนในอุตสาหกรรม ให้การหล่อลื่นและการระบายความร้อนที่มีประสิทธิภาพสำหรับระบบไหลเวียนน้ำมันในเครื่องจักรโรงงาน",
+      en: "Lubricants for industrial circulation systems. Provides effective lubrication and cooling for oil circulation systems in plant machinery.",
+    },
+    applications: [
+      { th: "ระบบหมุนเวียนน้ำมัน", en: "Oil circulation systems" },
+      { th: "เครื่องจักรโรงงาน", en: "Plant machinery" },
+    ],
+    icon: "circulation",
+    brands: [
+      { name: "PETRONAS", items: ["Circula Series"] },
+    ],
+  },
+  {
+    slug: "slideway-oil",
+    title: { th: "น้ำมันสไลด์เวย์", en: "Slideway Oil" },
+    description: {
+      th: "น้ำมันหล่อลื่นสำหรับรางเลื่อนของเครื่องจักรกล ให้การยึดเกาะและการหล่อลื่นที่ดีเยี่ยมสำหรับรางนำทางในเครื่องกลึง CNC และเครื่องจักรความแม่นยำสูง",
+      en: "Lubricants for machine tool slideways. Provides excellent adhesion and lubrication for guideways in CNC lathes and high-precision machinery.",
+    },
+    applications: [
+      { th: "รางเลื่อนเครื่องจักร", en: "Machine slideways" },
+      { th: "เครื่องกลึง CNC", en: "CNC lathes" },
+    ],
+    icon: "slideway",
+    brands: [
+      { name: "PETRONAS", items: ["Slideway Series"] },
+    ],
+  },
 ];

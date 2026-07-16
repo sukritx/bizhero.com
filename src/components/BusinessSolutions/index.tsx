@@ -49,7 +49,7 @@ export default function BusinessSolutions() {
           )}
           <div ref={scrollRef} onScroll={updateScrollButtons} className="flex snap-x snap-mandatory gap-8 overflow-x-auto pb-4 scroll-smooth [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
             {industries.map((industry) => (
-              <Link key={industry.slug} href={`/industries/${industry.slug}`} className="group w-[300px] flex-shrink-0 snap-start overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm transition hover:shadow-lg">
+              <Link key={industry.slug} href={`/${locale}/industries/${industry.slug}`} className="group w-[300px] flex-shrink-0 snap-start overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm transition hover:shadow-lg">
                 <div className="relative h-48 w-full overflow-hidden">
                   <Image src={industry.image} alt={industry.title[locale as keyof typeof industry.title]} fill className="object-cover transition duration-500 group-hover:scale-110" sizes="300px" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />

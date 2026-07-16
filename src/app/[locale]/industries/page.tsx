@@ -36,7 +36,7 @@ export default async function IndustriesPage({ params }: { params: Promise<{ loc
           </div>
         </div>
       </section>
-      <CallToAction dict={dict} />
+      <CallToAction dict={dict} locale={locale} />
     </>
   );
 }

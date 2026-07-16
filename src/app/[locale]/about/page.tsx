@@ -110,7 +110,7 @@ export default async function AboutPage({
         </div>
       </section>
 
-      <CallToAction dict={dict} />
+      <CallToAction dict={dict} locale={locale} />
     </>
   );
 }

@@ -25,7 +25,7 @@ export default async function FaqsPage({ params }: { params: Promise<{ locale: s
         </div></div></div></div>
       </section>
       <Faq dict={dict} />
-      <CallToAction dict={dict} />
+      <CallToAction dict={dict} locale={locale} />
     </>
   );
 }

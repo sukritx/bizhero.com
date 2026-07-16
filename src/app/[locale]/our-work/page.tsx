@@ -25,7 +25,7 @@ export default async function OurWorkPage({ params }: { params: Promise<{ locale
         </div></div>
       </section>
       <section className="py-20 lg:py-[120px]"><div className="container"><p className="text-center text-body-color">{dict.contact.locationDesc}</p></div></section>
-      <CallToAction dict={dict} />
+      <CallToAction dict={dict} locale={locale} />
     </>
   );
 }

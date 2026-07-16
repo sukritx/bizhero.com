@@ -8,7 +8,7 @@ const HomeBlogSection = ({ posts, dict, locale }: { posts: any; dict: Dictionary
       <div className="container mx-auto">
         <div className="mb-[60px]">
           <SectionTitle
-            subtitle={dict.nav.products}
+            subtitle={dict.footer.blog}
             title={dict.footer.blog}
             paragraph={dict.metadata.blogs.description}
             width="640px"

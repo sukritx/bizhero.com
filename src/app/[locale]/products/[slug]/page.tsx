@@ -2,8 +2,10 @@ import { getDictionary, Locale } from "@/i18n/i18n";
 import CallToAction from "@/components/CallToAction";
 import { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import { productCategories, getProductBySlug } from "@/data/productsData";
+import { getProductsByCategory } from "@/data/productSpecDiscovery";
 import { t as tl, tArr } from "@/data/locale";
 
 const brandImages: Record<string, string> = {
@@ -12,7 +14,7 @@ const brandImages: Record<string, string> = {
   Monroe: "/images/brands/monroe.png",
 };
 
-interface Props { params: Promise<{ slug: string; locale: string }>; }
+interface Props { params: Promise<{ slug: string; locale: string }> }
 
 export async function generateStaticParams() { return productCategories.map((p) => ({ slug: p.slug })); }
 
@@ -29,6 +31,17 @@ export default async function ProductPage({ params }: Props) {
   const dict = await getDictionary(locale as Locale);
   const product = getProductBySlug(slug);
   if (!product) notFound();
+
+  const discoveredProducts = getProductsByCategory(slug);
+  const hasDiscovered = discoveredProducts.length > 0;
+
+  const groupedByBrand: Record<string, typeof discoveredProducts> = {};
+  if (hasDiscovered) {
+    for (const p of discoveredProducts) {
+      if (!groupedByBrand[p.brand]) groupedByBrand[p.brand] = [];
+      groupedByBrand[p.brand].push(p);
+    }
+  }
 
   return (
     <>
@@ -53,27 +66,55 @@ export default async function ProductPage({ params }: Props) {
             <div className="flex flex-wrap gap-2">{tArr(product.applications, locale).map((app, i) => (<span key={i} className="rounded-full bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary">{app}</span>))}</div>
           </div>
           <div className="space-y-8">
-            {(product.brands || []).map((brand, i) => (
-              <div key={i} className="rounded-xl border border-stroke bg-white p-6 shadow-sm">
-                <h3 className="mb-4 flex items-center gap-3 text-lg font-bold text-dark">
-                  {brandImages[brand.name] && (
-                    <Image
-                      src={brandImages[brand.name]}
-                      alt={`${brand.name} logo`}
-                      width={80}
-                      height={32}
-                      className="h-8 w-auto object-contain"
-                    />
-                  )}
-                  {brand.name}
-                </h3>
-                <div className="flex flex-wrap gap-2">{brand.items.map((item, j) => (<span key={j} className="rounded bg-gray-100 px-3 py-1 text-sm text-body-color">{item}</span>))}</div>
-              </div>
-            ))}
+            {hasDiscovered
+              ? (Object.entries(groupedByBrand) as [string, typeof discoveredProducts][]).map(([brand, products]) => (
+                  <div key={brand} className="rounded-xl border border-stroke bg-white p-6 shadow-sm">
+                    <h3 className="mb-4 flex items-center gap-3 text-lg font-bold text-dark">
+                      {brandImages[brand] && (
+                        <Image
+                          src={brandImages[brand]}
+                          alt={`${brand} logo`}
+                          width={80}
+                          height={32}
+                          className="h-8 w-auto object-contain"
+                        />
+                      )}
+                      {brand}
+                    </h3>
+                    <div className="flex flex-wrap gap-2">
+                      {products.map((p) => (
+                        <Link
+                          key={p.productSlug}
+                          href={`/${locale}/products/${slug}/${p.productSlug}`}
+                          className="rounded bg-gray-100 px-3 py-1 text-sm text-body-color transition hover:bg-primary hover:text-white"
+                        >
+                          {p.matchedItemName || p.productName}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                ))
+              : (product.brands || []).map((brand, i) => (
+                  <div key={i} className="rounded-xl border border-stroke bg-white p-6 shadow-sm">
+                    <h3 className="mb-4 flex items-center gap-3 text-lg font-bold text-dark">
+                      {brandImages[brand.name] && (
+                        <Image
+                          src={brandImages[brand.name]}
+                          alt={`${brand.name} logo`}
+                          width={80}
+                          height={32}
+                          className="h-8 w-auto object-contain"
+                        />
+                      )}
+                      {brand.name}
+                    </h3>
+                    <div className="flex flex-wrap gap-2">{brand.items.map((item, j) => (<span key={j} className="rounded bg-gray-100 px-3 py-1 text-sm text-body-color">{item}</span>))}</div>
+                  </div>
+                ))}
           </div>
         </div></div>
       </section>
-      <CallToAction dict={dict} />
+      <CallToAction dict={dict} locale={locale} />
     </>
   );
 }

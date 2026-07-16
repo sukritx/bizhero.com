@@ -29,7 +29,7 @@ export default async function ServiceAreasPage({ params }: { params: Promise<{ l
           <p className="text-lg text-body-color">{dict.contact.locationDesc}</p>
         </div></div>
       </section>
-      <CallToAction dict={dict} />
+      <CallToAction dict={dict} locale={locale} />
     </>
   );
 }

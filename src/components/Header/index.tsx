@@ -30,50 +30,52 @@ const Header = () => {
     router.push(newPath);
   };
 
+  const p = (path: string) => `/${locale}${path}`;
+
   const menuData = [
     { id: 1, title: t("nav.home"), path: "/" },
     {
       id: 2, title: t("nav.products"),
       submenu: [
-        { title: t("menu.1.submenu.0.title"), path: "/products/engine-oil", description: t("menu.1.submenu.0.description") },
-        { title: t("menu.1.submenu.1.title"), path: "/products/hydraulic-oil", description: t("menu.1.submenu.1.description") },
-        { title: t("menu.1.submenu.2.title"), path: "/products/gear-oil", description: t("menu.1.submenu.2.description") },
-        { title: t("menu.1.submenu.3.title"), path: "/products/transmission-fluid", description: t("menu.1.submenu.3.description") },
-        { title: t("menu.1.submenu.4.title"), path: "/products/brake-fluid", description: t("menu.1.submenu.4.description") },
-        { title: t("menu.1.submenu.5.title"), path: "/products/coolant", description: t("menu.1.submenu.5.description") },
-        { title: t("menu.1.submenu.6.title"), path: "/products/grease", description: t("menu.1.submenu.6.description") },
-        { title: t("menu.1.submenu.7.title"), path: "/products/compressor-oil", description: t("menu.1.submenu.7.description") },
-        { title: t("menu.1.submenu.8.title"), path: "/products/heat-transfer-oil", description: t("menu.1.submenu.8.description") },
-        { title: t("menu.1.submenu.9.title"), path: "/products/metal-working-fluid", description: t("menu.1.submenu.9.description") },
+        { title: t("menu.1.submenu.0.title"), path: p("/products/engine-oil"), description: t("menu.1.submenu.0.description") },
+        { title: t("menu.1.submenu.1.title"), path: p("/products/hydraulic-oil"), description: t("menu.1.submenu.1.description") },
+        { title: t("menu.1.submenu.2.title"), path: p("/products/gear-oil"), description: t("menu.1.submenu.2.description") },
+        { title: t("menu.1.submenu.3.title"), path: p("/products/transmission-fluid"), description: t("menu.1.submenu.3.description") },
+        { title: t("menu.1.submenu.4.title"), path: p("/products/brake-fluid"), description: t("menu.1.submenu.4.description") },
+        { title: t("menu.1.submenu.5.title"), path: p("/products/coolant"), description: t("menu.1.submenu.5.description") },
+        { title: t("menu.1.submenu.6.title"), path: p("/products/grease"), description: t("menu.1.submenu.6.description") },
+        { title: t("menu.1.submenu.7.title"), path: p("/products/compressor-oil"), description: t("menu.1.submenu.7.description") },
+        { title: t("menu.1.submenu.8.title"), path: p("/products/heat-transfer-oil"), description: t("menu.1.submenu.8.description") },
+        { title: t("menu.1.submenu.9.title"), path: p("/products/metal-working-fluid"), description: t("menu.1.submenu.9.description") },
       ],
     },
     {
       id: 3, title: t("nav.industries"),
       submenu: [
-        { title: t("menu.2.submenu.0.title"), path: "/industries/manufacturing", description: t("menu.2.submenu.0.description") },
-        { title: t("menu.2.submenu.1.title"), path: "/industries/construction", description: t("menu.2.submenu.1.description") },
-        { title: t("menu.2.submenu.2.title"), path: "/industries/transportation", description: t("menu.2.submenu.2.description") },
-        { title: t("menu.2.submenu.3.title"), path: "/industries/agriculture", description: t("menu.2.submenu.3.description") },
-        { title: t("menu.2.submenu.4.title"), path: "/industries/heavy-equipment", description: t("menu.2.submenu.4.description") },
-        { title: t("menu.2.submenu.5.title"), path: "/industries/logistics", description: t("menu.2.submenu.5.description") },
+        { title: t("menu.2.submenu.0.title"), path: p("/industries/manufacturing"), description: t("menu.2.submenu.0.description") },
+        { title: t("menu.2.submenu.1.title"), path: p("/industries/construction"), description: t("menu.2.submenu.1.description") },
+        { title: t("menu.2.submenu.2.title"), path: p("/industries/transportation"), description: t("menu.2.submenu.2.description") },
+        { title: t("menu.2.submenu.3.title"), path: p("/industries/agriculture"), description: t("menu.2.submenu.3.description") },
+        { title: t("menu.2.submenu.4.title"), path: p("/industries/heavy-equipment"), description: t("menu.2.submenu.4.description") },
+        { title: t("menu.2.submenu.5.title"), path: p("/industries/logistics"), description: t("menu.2.submenu.5.description") },
       ],
     },
     {
       id: 4, title: t("nav.services"),
       submenu: [
-        { title: t("menu.3.submenu.0.title"), path: "/services/oil-change", description: t("menu.3.submenu.0.description") },
-        { title: t("menu.3.submenu.1.title"), path: "/services/sump-tank-cleaning", description: t("menu.3.submenu.1.description") },
-        { title: t("menu.3.submenu.2.title"), path: "/services/used-oil-analysis", description: t("menu.3.submenu.2.description") },
+        { title: t("menu.3.submenu.0.title"), path: p("/services/oil-change"), description: t("menu.3.submenu.0.description") },
+        { title: t("menu.3.submenu.1.title"), path: p("/services/sump-tank-cleaning"), description: t("menu.3.submenu.1.description") },
+        { title: t("menu.3.submenu.2.title"), path: p("/services/used-oil-analysis"), description: t("menu.3.submenu.2.description") },
       ],
     },
     {
       id: 5, title: t("nav.about"),
       submenu: [
-        { title: t("menu.4.submenu.0.title"), path: "/about", description: t("menu.4.submenu.0.description") },
-        { title: t("menu.4.submenu.1.title"), path: "/brands", description: t("menu.4.submenu.1.description") },
-        { title: t("menu.4.submenu.2.title"), path: "/blogs", description: t("menu.4.submenu.2.description") },
-        { title: t("menu.4.submenu.3.title"), path: "/faqs", description: t("menu.4.submenu.3.description") },
-        { title: t("menu.4.submenu.4.title"), path: "/contact", description: t("menu.4.submenu.4.description") },
+        { title: t("menu.4.submenu.0.title"), path: p("/about"), description: t("menu.4.submenu.0.description") },
+        { title: t("menu.4.submenu.1.title"), path: p("/brands"), description: t("menu.4.submenu.1.description") },
+        { title: t("menu.4.submenu.2.title"), path: p("/blogs"), description: t("menu.4.submenu.2.description") },
+        { title: t("menu.4.submenu.3.title"), path: p("/faqs"), description: t("menu.4.submenu.3.description") },
+        { title: t("menu.4.submenu.4.title"), path: p("/contact"), description: t("menu.4.submenu.4.description") },
       ],
     },
   ];
@@ -84,7 +86,7 @@ const Header = () => {
         <div className="container">
           <div className="relative -mx-4 flex items-center justify-between">
             <div className="w-60 max-w-full px-4">
-              <Link href="/" className="navbar-logo block w-full py-5">
+              <Link href={p("/")} className="navbar-logo block w-full py-5">
                 <Image src="/images/brands/bizhero-logo.jpg" alt="BizHero Lubricants" width={200} height={60} className="h-auto w-full max-w-[200px]" priority />
               </Link>
             </div>

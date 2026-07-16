@@ -4,11 +4,14 @@ import Image from "next/image";
 import Link from "next/link";
 import { useT } from "@/i18n/useT";
 
-const services = [
-  { image: "/images/services/oil-change.jpeg", titleKey: "homeServices.services.oilChange.title", descKey: "homeServices.services.oilChange.description", href: "/services/oil-change" },
-  { image: "/images/services/tank-cleaning.jpeg", titleKey: "homeServices.services.sumpTankCleaning.title", descKey: "homeServices.services.sumpTankCleaning.description", href: "/services/sump-tank-cleaning" },
-  { image: "/images/services/oil-analysis.jpeg", titleKey: "homeServices.services.usedOilAnalysis.title", descKey: "homeServices.services.usedOilAnalysis.description", href: "/services/used-oil-analysis" },
-];
+function services(locale: string) {
+  const p = (path: string) => `/${locale}${path}`;
+  return [
+    { image: "/images/services/oil-change.jpeg", titleKey: "homeServices.services.oilChange.title", descKey: "homeServices.services.oilChange.description", href: p("/services/oil-change") },
+    { image: "/images/services/tank-cleaning.jpeg", titleKey: "homeServices.services.sumpTankCleaning.title", descKey: "homeServices.services.sumpTankCleaning.description", href: p("/services/sump-tank-cleaning") },
+    { image: "/images/services/oil-analysis.jpeg", titleKey: "homeServices.services.usedOilAnalysis.title", descKey: "homeServices.services.usedOilAnalysis.description", href: p("/services/used-oil-analysis") },
+  ];
+}
 
 const serviceIcons = [
   (<svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.4 16 10 16 10s-1.3-1.4-2.2-2.2c-.5-.4-1.2-.4-1.7 0C10.3 8.6 9 10 9 10s-2.7.4-4.5 1.1C3.7 11.3 3 12.1 3 13v3c0 .6.4 1 1 1h2" /><circle cx="7" cy="17" r="2" /><path d="M9 17h6" /><circle cx="17" cy="17" r="2" /></svg>),
@@ -17,7 +20,8 @@ const serviceIcons = [
 ];
 
 export default function HomeServices({ dict: _dict }: { dict?: any }) {
-  const { t } = useT();
+  const { t, locale } = useT();
+  const items = services(locale);
 
   return (
     <section className="bg-gray-50 py-20 lg:py-28">
@@ -32,7 +36,7 @@ export default function HomeServices({ dict: _dict }: { dict?: any }) {
           <p className="text-lg text-gray-600">{t("homeServices.subtitle")}</p>
         </div>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
-          {services.map((service, i) => (
+          {items.map((service, i) => (
             <div key={i} className="group rounded-xl border border-gray-200 bg-white p-8 shadow-sm transition hover:shadow-lg">
               <div className="relative mb-5 h-48 w-full overflow-hidden rounded-lg">
                 <Image src={service.image} alt={t(service.titleKey)} fill className="object-cover transition duration-500 group-hover:scale-105" sizes="(max-width: 768px) 100vw, 33vw" />

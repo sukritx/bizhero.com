@@ -36,7 +36,7 @@ export default async function ProductsPage({ params }: { params: Promise<{ local
           </div>
         </div>
       </section>
-      <CallToAction dict={dict} />
+      <CallToAction dict={dict} locale={locale} />
     </>
   );
 }

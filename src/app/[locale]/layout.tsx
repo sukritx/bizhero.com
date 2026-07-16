@@ -102,7 +102,7 @@ export default async function LocaleLayout({
       />
       <Header />
       {children}
-      <Footer dict={dict} />
+      <Footer dict={dict} locale={locale} />
       <ContactWidget />
       <ScrollToTop />
       <ScrollUp />

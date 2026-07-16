@@ -50,14 +50,14 @@ export default async function Home({
 
   return (
     <main>
-      <Hero dict={dict} />
+      <Hero dict={dict} locale={locale} />
       <AboutUs dict={dict} />
       <BusinessSolutions />
       <OurServices />
       <HomeServices />
       <HomeBlogSection posts={posts} dict={dict} locale={locale} />
       <Faq dict={dict} />
-      <CallToAction dict={dict} />
+      <CallToAction dict={dict} locale={locale} />
     </main>
   );
 }

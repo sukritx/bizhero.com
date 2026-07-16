@@ -44,7 +44,7 @@ export default async function BrandPage({ params }: Props) {
           </div>
         </div></div>
       </section>
-      <CallToAction dict={dict} />
+      <CallToAction dict={dict} locale={locale} />
     </>
   );
 }

@@ -6,7 +6,7 @@ import Link from "next/link";
 import { useT } from "@/i18n/useT";
 
 const NotFound = () => {
-  const { t } = useT();
+  const { t, locale } = useT();
 
   return (
     <section className="bg-white py-20 dark:bg-dark-2 lg:py-[110px]">
@@ -31,7 +31,7 @@ const NotFound = () => {
               </div>
               <h3 className="mb-5 text-2xl font-semibold text-dark dark:text-white">{t("notFound.title")}</h3>
               <p className="mb-8 text-base text-body-color dark:text-dark-6">{t("notFound.description")}</p>
-              <Link href="/" className="bg-dark px-7 py-3 text-base font-bold text-white transition hover:bg-primary dark:bg-primary dark:hover:bg-primary/80">
+              <Link href={`/${locale}`} className="bg-dark px-7 py-3 text-base font-bold text-white transition hover:bg-primary dark:bg-primary dark:hover:bg-primary/80">
                 {t("notFound.goHome")}
               </Link>
             </div>

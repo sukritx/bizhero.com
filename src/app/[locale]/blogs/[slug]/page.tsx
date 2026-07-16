@@ -63,7 +63,7 @@ export default async function Post({ params }: Props) {
           </div>
         </div>
       </section>
-      <CallToAction dict={dict} />
+      <CallToAction dict={dict} locale={locale} />
     </>
   );
 }

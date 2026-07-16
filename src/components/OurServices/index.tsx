@@ -3,14 +3,17 @@
 import Link from "next/link";
 import { useT } from "@/i18n/useT";
 
-const productCategories = [
-  { titleKey: "ourServices.productCategories.engineOil.title", descKey: "ourServices.productCategories.engineOil.description", href: "/products/engine-oil" },
-  { titleKey: "ourServices.productCategories.hydraulicOil.title", descKey: "ourServices.productCategories.hydraulicOil.description", href: "/products/hydraulic-oil" },
-  { titleKey: "ourServices.productCategories.gearOil.title", descKey: "ourServices.productCategories.gearOil.description", href: "/products/gear-oil" },
-  { titleKey: "ourServices.productCategories.grease.title", descKey: "ourServices.productCategories.grease.description", href: "/products/grease" },
-  { titleKey: "ourServices.productCategories.compressorOil.title", descKey: "ourServices.productCategories.compressorOil.description", href: "/products/compressor-oil" },
-  { titleKey: "ourServices.productCategories.metalWorkingFluid.title", descKey: "ourServices.productCategories.metalWorkingFluid.description", href: "/products/metal-working-fluid" },
-];
+function productCategories(locale: string) {
+  const prefix = `/${locale}`;
+  return [
+    { titleKey: "ourServices.productCategories.engineOil.title", descKey: "ourServices.productCategories.engineOil.description", href: `${prefix}/products/engine-oil` },
+    { titleKey: "ourServices.productCategories.hydraulicOil.title", descKey: "ourServices.productCategories.hydraulicOil.description", href: `${prefix}/products/hydraulic-oil` },
+    { titleKey: "ourServices.productCategories.gearOil.title", descKey: "ourServices.productCategories.gearOil.description", href: `${prefix}/products/gear-oil` },
+    { titleKey: "ourServices.productCategories.grease.title", descKey: "ourServices.productCategories.grease.description", href: `${prefix}/products/grease` },
+    { titleKey: "ourServices.productCategories.compressorOil.title", descKey: "ourServices.productCategories.compressorOil.description", href: `${prefix}/products/compressor-oil` },
+    { titleKey: "ourServices.productCategories.metalWorkingFluid.title", descKey: "ourServices.productCategories.metalWorkingFluid.description", href: `${prefix}/products/metal-working-fluid` },
+  ];
+}
 
 const icons = [
   (<svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" /><polyline points="14 2 14 8 20 8" /><line x1="16" y1="13" x2="8" y2="13" /><line x1="16" y1="17" x2="8" y2="17" /></svg>),
@@ -22,7 +25,8 @@ const icons = [
 ];
 
 export default function OurServices({ dict: _dict }: { dict?: any }) {
-  const { t } = useT();
+  const { t, locale } = useT();
+  const categories = productCategories(locale);
 
   return (
     <section className="bg-white py-20 lg:py-28">
@@ -38,7 +42,7 @@ export default function OurServices({ dict: _dict }: { dict?: any }) {
         </div>
 
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {productCategories.map((category, i) => (
+          {categories.map((category, i) => (
             <div key={i} className="group rounded-xl border border-gray-200 bg-white p-8 shadow-sm transition hover:shadow-lg">
               <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-lg bg-primary/10 text-primary transition duration-300 group-hover:bg-primary group-hover:text-white">
                 {icons[i]}
@@ -54,7 +58,7 @@ export default function OurServices({ dict: _dict }: { dict?: any }) {
         </div>
 
         <div className="mt-12 text-center">
-          <Link href="/products/engine-oil" className="inline-flex items-center justify-center border border-primary px-6 py-3 text-base font-bold text-primary transition duration-300 hover:bg-primary hover:text-white">
+          <Link href={`/${locale}/products/engine-oil`} className="inline-flex items-center justify-center border border-primary px-6 py-3 text-base font-bold text-primary transition duration-300 hover:bg-primary hover:text-white">
             {t("ourServices.viewAllProducts")}
           </Link>
         </div>

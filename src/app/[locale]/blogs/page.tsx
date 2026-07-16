@@ -32,7 +32,7 @@ export default async function Blog({ params }: { params: Promise<{ locale: strin
           </div>
         </div>
       </section>
-      <CallToAction dict={dict} />
+      <CallToAction dict={dict} locale={locale} />
     </>
   );
 }

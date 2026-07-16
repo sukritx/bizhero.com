@@ -62,7 +62,7 @@ export default async function ServicePage({ params }: Props) {
           <div className="text-center"><Link href="https://share-na2.hsforms.com/283IRhHVgQLuB-uFLk7V9cQ40ae96" className="inline-flex items-center justify-center bg-primary px-7 py-3 text-base font-bold text-white transition duration-300 hover:bg-primary/90">{locale === "th" ? "สอบถามเกี่ยวกับ" : "Inquire About"} {title}</Link></div>
         </div></div>
       </section>
-      <CallToAction dict={dict} />
+      <CallToAction dict={dict} locale={locale} />
     </>
   );
 }

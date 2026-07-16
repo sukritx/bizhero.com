@@ -1,7 +1,7 @@
 import { Dictionary } from "@/i18n/i18n";
 import Link from "next/link";
 
-export default function CallToAction({ dict }: { dict: Dictionary }) {
+export default function CallToAction({ dict, locale }: { dict: Dictionary; locale?: string }) {
   const t = dict.cta;
 
   return (
@@ -16,7 +16,7 @@ export default function CallToAction({ dict }: { dict: Dictionary }) {
             <Link href="https://share-na2.hsforms.com/283IRhHVgQLuB-uFLk7V9cQ40ae96" className="inline-flex items-center justify-center bg-white px-8 py-4 text-base font-bold text-dark transition duration-300 hover:bg-white/90">
               {t.requestQuote}
             </Link>
-            <Link href="/products/engine-oil" className="inline-flex items-center justify-center border border-white px-8 py-4 text-base font-bold text-white transition duration-300 hover:bg-white hover:text-dark">
+            <Link href={`/${locale || "th"}/products/engine-oil`} className="inline-flex items-center justify-center border border-white px-8 py-4 text-base font-bold text-white transition duration-300 hover:bg-white hover:text-dark">
               {t.browseProducts}
             </Link>
           </div>

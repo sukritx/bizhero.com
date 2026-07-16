@@ -54,7 +54,7 @@ export default async function IndustryPage({ params }: Props) {
           </div>
         </div></div>
       </section>
-      <CallToAction dict={dict} />
+      <CallToAction dict={dict} locale={locale} />
     </>
   );
 }

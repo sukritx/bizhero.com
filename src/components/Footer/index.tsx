@@ -2,8 +2,9 @@ import { Dictionary } from "@/i18n/i18n";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Footer({ dict }: { dict: Dictionary }) {
+export default function Footer({ dict, locale }: { dict: Dictionary; locale?: string }) {
   const t = dict.footer;
+  const p = `/${locale || "th"}`;
 
   return (
     <footer className="wow fadeInUp relative z-10 bg-white pt-20 lg:pt-[100px]" data-wow-delay=".15s">
@@ -11,7 +12,7 @@ export default function Footer({ dict }: { dict: Dictionary }) {
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-4/12 xl:w-3/12">
             <div className="mb-10 w-full">
-              <Link href="/" className="mb-6 inline-block">
+              <Link href={p} className="mb-6 inline-block">
                 <Image src="/images/brands/bizhero-logo.jpg" alt="Biz Hero" width={180} height={48} className="h-auto w-[180px]" priority />
               </Link>
               <div className="mb-8 max-w-[270px] space-y-3 text-base text-gray-800">
@@ -52,12 +53,12 @@ export default function Footer({ dict }: { dict: Dictionary }) {
             <div className="mb-10 w-full">
               <h4 className="mb-9 text-lg font-semibold text-gray-800">{t.products}</h4>
               <ul>
-                <li><Link href="/products/engine-oil" className="mb-3 inline-block text-base text-gray-600 hover:text-primary">{t.footerProductLinks.engineOil}</Link></li>
-                <li><Link href="/products/hydraulic-oil" className="mb-3 inline-block text-base text-gray-600 hover:text-primary">{t.footerProductLinks.hydraulicOil}</Link></li>
-                <li><Link href="/products/gear-oil" className="mb-3 inline-block text-base text-gray-600 hover:text-primary">{t.footerProductLinks.gearOil}</Link></li>
-                <li><Link href="/products/grease" className="mb-3 inline-block text-base text-gray-600 hover:text-primary">{t.footerProductLinks.grease}</Link></li>
-                <li><Link href="/products/compressor-oil" className="mb-3 inline-block text-base text-gray-600 hover:text-primary">{t.footerProductLinks.compressorOil}</Link></li>
-                <li><Link href="/products/metal-working-fluid" className="mb-3 inline-block text-base text-gray-600 hover:text-primary">{t.footerProductLinks.metalWorkingFluid}</Link></li>
+                <li><Link href={`${p}/products/engine-oil`} className="mb-3 inline-block text-base text-gray-600 hover:text-primary">{t.footerProductLinks.engineOil}</Link></li>
+                <li><Link href={`${p}/products/hydraulic-oil`} className="mb-3 inline-block text-base text-gray-600 hover:text-primary">{t.footerProductLinks.hydraulicOil}</Link></li>
+                <li><Link href={`${p}/products/gear-oil`} className="mb-3 inline-block text-base text-gray-600 hover:text-primary">{t.footerProductLinks.gearOil}</Link></li>
+                <li><Link href={`${p}/products/grease`} className="mb-3 inline-block text-base text-gray-600 hover:text-primary">{t.footerProductLinks.grease}</Link></li>
+                <li><Link href={`${p}/products/compressor-oil`} className="mb-3 inline-block text-base text-gray-600 hover:text-primary">{t.footerProductLinks.compressorOil}</Link></li>
+                <li><Link href={`${p}/products/metal-working-fluid`} className="mb-3 inline-block text-base text-gray-600 hover:text-primary">{t.footerProductLinks.metalWorkingFluid}</Link></li>
               </ul>
             </div>
           </div>
@@ -65,9 +66,9 @@ export default function Footer({ dict }: { dict: Dictionary }) {
             <div className="mb-10 w-full">
               <h4 className="mb-9 text-lg font-semibold text-gray-800">{t.services}</h4>
               <ul>
-                <li><Link href="/services/oil-change" className="mb-3 inline-block text-base text-gray-600 hover:text-primary">{t.footerServiceLinks.oilChange}</Link></li>
-                <li><Link href="/services/sump-tank-cleaning" className="mb-3 inline-block text-base text-gray-600 hover:text-primary">{t.footerServiceLinks.sumpTankCleaning}</Link></li>
-                <li><Link href="/services/used-oil-analysis" className="mb-3 inline-block text-base text-gray-600 hover:text-primary">{t.footerServiceLinks.usedOilAnalysis}</Link></li>
+                <li><Link href={`${p}/services/oil-change`} className="mb-3 inline-block text-base text-gray-600 hover:text-primary">{t.footerServiceLinks.oilChange}</Link></li>
+                <li><Link href={`${p}/services/sump-tank-cleaning`} className="mb-3 inline-block text-base text-gray-600 hover:text-primary">{t.footerServiceLinks.sumpTankCleaning}</Link></li>
+                <li><Link href={`${p}/services/used-oil-analysis`} className="mb-3 inline-block text-base text-gray-600 hover:text-primary">{t.footerServiceLinks.usedOilAnalysis}</Link></li>
               </ul>
             </div>
           </div>
@@ -75,10 +76,10 @@ export default function Footer({ dict }: { dict: Dictionary }) {
             <div className="mb-10 w-full">
               <h4 className="mb-9 text-lg font-semibold text-gray-800">{t.company}</h4>
               <ul>
-                <li><Link href="/about" className="mb-3 inline-block text-base text-gray-600 hover:text-primary">{t.aboutUs}</Link></li>
-                <li><Link href="/brands" className="mb-3 inline-block text-base text-gray-600 hover:text-primary">{t.ourBrands}</Link></li>
-                <li><Link href="/blogs" className="mb-3 inline-block text-base text-gray-600 hover:text-primary">{t.blog}</Link></li>
-                <li><Link href="/faqs" className="mb-3 inline-block text-base text-gray-600 hover:text-primary">{t.faqs}</Link></li>
+                <li><Link href={`${p}/about`} className="mb-3 inline-block text-base text-gray-600 hover:text-primary">{t.aboutUs}</Link></li>
+                <li><Link href={`${p}/brands`} className="mb-3 inline-block text-base text-gray-600 hover:text-primary">{t.ourBrands}</Link></li>
+                <li><Link href={`${p}/blogs`} className="mb-3 inline-block text-base text-gray-600 hover:text-primary">{t.blog}</Link></li>
+                <li><Link href={`${p}/faqs`} className="mb-3 inline-block text-base text-gray-600 hover:text-primary">{t.faqs}</Link></li>
                 <li><a href="https://share-na2.hsforms.com/283IRhHVgQLuB-uFLk7V9cQ40ae96" className="mb-3 inline-block text-base text-gray-600 hover:text-primary">{t.contact}</a></li>
               </ul>
             </div>
@@ -101,8 +102,8 @@ export default function Footer({ dict }: { dict: Dictionary }) {
             <div className="w-full px-4 md:w-2/3 lg:w-1/2">
               <div className="my-1">
                 <div className="-mx-3 flex items-center justify-center md:justify-start">
-                  <Link href="/privacy" className="px-3 text-base text-gray-600 hover:text-gray-900 hover:underline">{t.privacyPolicy}</Link>
-                  <Link href="/terms" className="px-3 text-base text-gray-600 hover:text-gray-900 hover:underline">{t.termsOfService}</Link>
+                  <Link href={`${p}/privacy`} className="px-3 text-base text-gray-600 hover:text-gray-900 hover:underline">{t.privacyPolicy}</Link>
+                  <Link href={`${p}/terms`} className="px-3 text-base text-gray-600 hover:text-gray-900 hover:underline">{t.termsOfService}</Link>
                 </div>
               </div>
             </div>

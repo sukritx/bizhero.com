@@ -2,8 +2,9 @@ import { Dictionary } from "@/i18n/i18n";
 import Link from "next/link";
 import Image from "next/image";
 
-export default function Hero({ dict }: { dict: Dictionary }) {
+export default function Hero({ dict, locale }: { dict: Dictionary; locale?: string }) {
   const t = dict.hero;
+  const p = `/${locale || "th"}`;
 
   return (
     <section id="home" className="relative overflow-hidden bg-gray-900 pt-44 pb-12 sm:pt-48 sm:pb-16 lg:pt-52">
@@ -40,10 +41,10 @@ export default function Hero({ dict }: { dict: Dictionary }) {
                 </span>
               </div>
               <div className="mt-8 flex flex-wrap gap-4 sm:mt-10">
-                <Link href="/products" className="inline-flex bg-primary px-6 py-3 text-base font-bold text-white transition-all duration-200 hover:bg-primary/80">
+                <Link href={`${p}/products`} className="inline-flex bg-primary px-6 py-3 text-base font-bold text-white transition-all duration-200 hover:bg-primary/80">
                   {t.exploreProducts}
                 </Link>
-                <Link href="/services" className="inline-flex border border-white px-6 py-3 text-base font-bold text-white transition-all duration-200 hover:bg-white hover:text-dark">
+                <Link href={`${p}/services`} className="inline-flex border border-white px-6 py-3 text-base font-bold text-white transition-all duration-200 hover:bg-white hover:text-dark">
                   {t.ourServices}
                 </Link>
               </div>
