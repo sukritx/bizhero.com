@@ -1,9 +1,16 @@
 import { getDictionary, Locale } from "@/i18n/i18n";
 import CallToAction from "@/components/CallToAction";
 import { Metadata } from "next";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { productCategories, getProductBySlug } from "@/data/productsData";
 import { t as tl, tArr } from "@/data/locale";
+
+const brandImages: Record<string, string> = {
+  PETRONAS: "/images/brands/petronas.svg",
+  Valvoline: "/images/brands/valvoline.svg",
+  Monroe: "/images/brands/monroe.png",
+};
 
 interface Props { params: Promise<{ slug: string; locale: string }>; }
 
@@ -25,8 +32,16 @@ export default async function ProductPage({ params }: Props) {
 
   return (
     <>
-      <section className="relative overflow-hidden bg-primary pt-[120px] pb-20 md:pt-[130px] lg:pt-[160px]">
-        <div className="container"><div className="mx-auto max-w-[780px] text-center">
+      <section className="relative overflow-hidden bg-gray-900 pt-[160px] pb-32 md:pt-[200px] md:pb-40 lg:pt-[240px] lg:pb-48">
+        <Image
+          src={`/images/industries/heavy-industry.jpeg`}
+          alt=""
+          fill
+          className="object-cover object-center opacity-40"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/30" />
+        <div className="container relative z-10"><div className="mx-auto max-w-[780px] text-center">
           <h1 className="mb-6 text-3xl font-bold text-white sm:text-4xl">{tl(product.title, locale)}</h1>
           <p className="text-lg text-white/80">{tl(product.description, locale)}</p>
         </div></div>
@@ -40,7 +55,18 @@ export default async function ProductPage({ params }: Props) {
           <div className="space-y-8">
             {(product.brands || []).map((brand, i) => (
               <div key={i} className="rounded-xl border border-stroke bg-white p-6 shadow-sm">
-                <h3 className="mb-4 text-lg font-bold text-dark">{brand.name}</h3>
+                <h3 className="mb-4 flex items-center gap-3 text-lg font-bold text-dark">
+                  {brandImages[brand.name] && (
+                    <Image
+                      src={brandImages[brand.name]}
+                      alt={`${brand.name} logo`}
+                      width={80}
+                      height={32}
+                      className="h-8 w-auto object-contain"
+                    />
+                  )}
+                  {brand.name}
+                </h3>
                 <div className="flex flex-wrap gap-2">{brand.items.map((item, j) => (<span key={j} className="rounded bg-gray-100 px-3 py-1 text-sm text-body-color">{item}</span>))}</div>
               </div>
             ))}
