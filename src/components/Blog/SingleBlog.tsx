@@ -3,13 +3,13 @@ import { format } from "date-fns";
 import Image from "next/image";
 import Link from "next/link";
 
-const SingleBlog = ({ blog }: { blog: Blog }) => {
+const SingleBlog = ({ blog, locale }: { blog: Blog; locale: string }) => {
   const { title, coverImage, excerpt, date, slug } = blog;
 
   return (
     <div className="wow fadeInUp group mb-10" data-wow-delay=".1s">
       <div className="relative mb-8 overflow-hidden rounded">
-        <Link href={`/blogs/${slug}`} aria-label="blog cover" className="block">
+        <Link href={`/${locale}/blogs/${slug}`} aria-label="blog cover" className="block">
           <Image
             src={coverImage!}
             alt="image"
@@ -19,7 +19,7 @@ const SingleBlog = ({ blog }: { blog: Blog }) => {
           />
         </Link>
         <Link
-          href={`/blogs/${slug}`}
+          href={`/${locale}/blogs/${slug}`}
           className="absolute right-3 top-3 rounded bg-primary px-3 py-1.5 text-xs font-semibold text-white transition hover:opacity-90"
         >
           Read More &rarr;
@@ -31,7 +31,7 @@ const SingleBlog = ({ blog }: { blog: Blog }) => {
         </span>
         <h3>
           <Link
-            href={`/blogs/${slug}`}
+            href={`/${locale}/blogs/${slug}`}
             className="mb-4 inline-block text-xl font-semibold text-dark hover:text-primary dark:text-white dark:hover:text-primary sm:text-2xl lg:text-xl xl:text-2xl"
           >
             {title}

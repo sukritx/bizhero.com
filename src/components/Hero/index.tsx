@@ -1,7 +1,10 @@
+import { Dictionary } from "@/i18n/i18n";
 import Link from "next/link";
 import Image from "next/image";
 
-const Hero = () => {
+export default function Hero({ dict }: { dict: Dictionary }) {
+  const t = dict.hero;
+
   return (
     <section id="home" className="relative overflow-hidden bg-gray-900 pt-44 pb-12 sm:pt-48 sm:pb-16 lg:pt-52">
       <Image
@@ -17,85 +20,45 @@ const Hero = () => {
           <div>
             <div className="text-center lg:text-left">
               <span className="mb-4 inline-block text-sm font-semibold uppercase tracking-wider text-primary">
-                Authorized Lubricant Distributor
+                {t.badge}
               </span>
               <h1 className="text-4xl font-bold leading-tight text-white sm:text-5xl sm:leading-tight lg:leading-tight lg:text-6xl">
-                Premium Lubricants &amp; Maintenance Services
+                {t.headline}
               </h1>
               <p className="mt-2 text-lg text-gray-200 sm:mt-8">
-                Authorized distributor of Valvoline, PETRONAS, and Monroe — plus maintenance, technical support, and oil analysis to keep your equipment running.
+                {t.subtitle}
               </p>
               <div className="mt-8 flex flex-wrap items-center justify-center gap-8 lg:justify-start">
                 <span className="flex items-center justify-center rounded bg-white p-2">
-                  <Image
-                    src="/images/brands/petronas.svg"
-                    alt="PETRONAS"
-                    width={100}
-                    height={40}
-                    className="h-12 w-auto object-contain"
-                  />
+                  <Image src="/images/brands/petronas.svg" alt="PETRONAS" width={100} height={40} className="h-12 w-auto object-contain" />
                 </span>
                 <span className="flex items-center justify-center rounded bg-white p-2">
-                  <Image
-                    src="/images/brands/valvoline.svg"
-                    alt="Valvoline"
-                    width={100}
-                    height={40}
-                    className="h-12 w-auto object-contain"
-                  />
+                  <Image src="/images/brands/valvoline.svg" alt="Valvoline" width={100} height={40} className="h-12 w-auto object-contain" />
                 </span>
                 <span className="flex items-center justify-center rounded bg-white p-2">
-                  <Image
-                    src="/images/brands/monroe.png"
-                    alt="Monroe"
-                    width={100}
-                    height={40}
-                    className="h-12 w-auto object-contain"
-                  />
+                  <Image src="/images/brands/monroe.png" alt="Monroe" width={100} height={40} className="h-12 w-auto object-contain" />
                 </span>
               </div>
               <div className="mt-8 flex flex-wrap gap-4 sm:mt-10">
-                <Link
-                  href="/products"
-                  className="inline-flex bg-primary px-6 py-3 text-base font-bold text-white transition-all duration-200 hover:bg-primary/80"
-                >
-                  Explore Products
+                <Link href="/products" className="inline-flex bg-primary px-6 py-3 text-base font-bold text-white transition-all duration-200 hover:bg-primary/80">
+                  {t.exploreProducts}
                 </Link>
-                <Link
-                  href="/services"
-                  className="inline-flex border border-white px-6 py-3 text-base font-bold text-white transition-all duration-200 hover:bg-white hover:text-dark"
-                >
-                  Our Services
+                <Link href="/services" className="inline-flex border border-white px-6 py-3 text-base font-bold text-white transition-all duration-200 hover:bg-white hover:text-dark">
+                  {t.ourServices}
                 </Link>
               </div>
               <div className="mt-10 grid grid-cols-3 gap-4 border-t border-white/20 pt-8">
-                <div>
-                  <div className="text-2xl font-bold text-white">3</div>
-                  <div className="text-sm text-gray-400">Trusted Brands</div>
-                </div>
-                <div>
-                  <div className="text-2xl font-bold text-white">10+</div>
-                  <div className="text-sm text-gray-400">Product Categories</div>
-                </div>
-                <div>
-                  <div className="text-2xl font-bold text-white">6</div>
-                  <div className="text-sm text-gray-400">Industries Served</div>
-                </div>
+                <div><div className="text-2xl font-bold text-white">3</div><div className="text-sm text-gray-400">{t.statBrands}</div></div>
+                <div><div className="text-2xl font-bold text-white">10+</div><div className="text-sm text-gray-400">{t.statCategories}</div></div>
+                <div><div className="text-2xl font-bold text-white">6</div><div className="text-sm text-gray-400">{t.statIndustries}</div></div>
               </div>
             </div>
           </div>
           <div className="hidden lg:block">
             <div className="rounded-xl bg-white/10 backdrop-blur-sm p-8 sm:p-10">
-              <h3 className="mb-6 text-2xl font-semibold text-white">
-                Why Choose BizHero?
-              </h3>
+              <h3 className="mb-6 text-2xl font-semibold text-white">{t.whyTitle}</h3>
               <ul className="space-y-4">
-                {[
-                  "Authorized distributor of top global brands",
-                  "Automotive, commercial & industrial lubricants",
-                  "Maintenance & technical support services",
-                  "Predictive maintenance via oil analysis",
-                ].map((item, i) => (
+                {[t.why1, t.why2, t.why3, t.why4].map((item, i) => (
                   <li key={i} className="flex items-start gap-3 text-gray-200">
                     <svg className="mt-0.5 h-5 w-5 flex-shrink-0 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
@@ -105,11 +68,8 @@ const Hero = () => {
                 ))}
               </ul>
               <div className="mt-8">
-                <Link
-                   href="https://share-na2.hsforms.com/283IRhHVgQLuB-uFLk7V9cQ40ae96"
-                  className="block w-full bg-primary px-6 py-3 text-center text-base font-bold text-white transition duration-300 ease-in-out hover:bg-primary/80"
-                >
-                  Request a Quote
+                <Link href="https://share-na2.hsforms.com/283IRhHVgQLuB-uFLk7V9cQ40ae96" className="block w-full bg-primary px-6 py-3 text-center text-base font-bold text-white transition duration-300 ease-in-out hover:bg-primary/80">
+                  {t.requestQuote}
                 </Link>
               </div>
             </div>
@@ -118,6 +78,4 @@ const Hero = () => {
       </div>
     </section>
   );
-};
-
-export default Hero;
+}
