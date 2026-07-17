@@ -49,6 +49,7 @@ export default async function ProductDetailPage({ params }: Props) {
   if (!product) notFound();
 
   const displayName = product.matchedItemName || product.productName;
+  const pdfUrl = product.pdfRelPath.split("/").map(encodeURIComponent).join("/");
 
   return (
     <>
@@ -90,13 +91,13 @@ export default async function ProductDetailPage({ params }: Props) {
           </h2>
           <div className="overflow-hidden rounded-xl border border-stroke bg-white shadow-sm">
             <iframe
-              src={`/${product.pdfRelPath}#view=FitH`}
+              src={`/${pdfUrl}#view=FitH`}
               className="h-[600px] w-full md:h-[800px]"
               title={product.pdfBasename}
             />
             <div className="border-t border-stroke p-4 text-center">
               <a
-                href={`/${product.pdfRelPath}`}
+                href={`/${pdfUrl}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-lg bg-primary px-6 py-3 text-sm font-semibold text-white transition hover:bg-primary/90"
