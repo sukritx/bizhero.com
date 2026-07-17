@@ -133,6 +133,21 @@ const Header = () => {
                     )}
                   </ul>
                   <div className="mt-4 flex flex-col gap-3 border-t border-stroke pt-4 lg:hidden">
+                    <div className="flex items-center justify-center gap-1">
+                      <button
+                        onClick={() => { switchLocale("th"); navbarToggleHandler(); }}
+                        className={`px-1.5 text-xs font-semibold transition-colors ${locale === "th" ? "text-primary" : "text-gray-400 hover:text-primary"}`}
+                      >
+                        TH
+                      </button>
+                      <span className="text-xs text-gray-300">|</span>
+                      <button
+                        onClick={() => { switchLocale("en"); navbarToggleHandler(); }}
+                        className={`px-1.5 text-xs font-semibold transition-colors ${locale === "en" ? "text-primary" : "text-gray-400 hover:text-primary"}`}
+                      >
+                        EN
+                      </button>
+                    </div>
                     <Link href="https://share-na2.hsforms.com/283IRhHVgQLuB-uFLk7V9cQ40ae96" onClick={navbarToggleHandler} className="bg-primary px-6 py-3 text-center text-base font-bold text-white duration-300 ease-in-out hover:bg-primary/90">
                       {t("nav.requestQuote")}
                     </Link>
