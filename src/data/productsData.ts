@@ -190,7 +190,7 @@ export const productCategories: ProductCategory[] = [
     ],
     icon: "metal",
     brands: [
-      { name: "Monroe", items: ["Straight Oils for Metalworking"] },
+      { name: "Cresco Asia", items: ["Straight Oils for Metalworking"] },
     ],
   },
   {

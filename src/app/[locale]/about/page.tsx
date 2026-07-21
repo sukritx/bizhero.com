@@ -87,9 +87,9 @@ export default async function AboutPage({
               <h2 className="mb-6 text-2xl font-bold text-dark">{t.ourBrands}</h2>
               <div className="grid grid-cols-1 gap-6 sm:grid-cols-3">
                 {[
-                  { key: "valvoline", href: `/brands/valvoline` },
-                  { key: "petronas", href: `/brands/petronas` },
-                  { key: "monroe", href: `/brands/monroe` },
+                  { key: "valvoline", name: "Valvoline", href: `/brands/valvoline` },
+                  { key: "petronas", name: "PETRONAS", href: `/brands/petronas` },
+                  { key: "crescoasia", name: "Cresco Asia", href: `/brands/cresco-asia` },
                 ].map((brand, i) => (
                   <Link
                     key={i}
@@ -97,7 +97,7 @@ export default async function AboutPage({
                     className="group rounded-lg bg-white p-6 shadow-sm transition hover:shadow-md"
                   >
                     <h3 className="mb-2 text-lg font-bold text-dark group-hover:text-primary">
-                      {brand.key.charAt(0).toUpperCase() + brand.key.slice(1)}
+                      {brand.name}
                     </h3>
                     <p className="text-sm text-body-color">
                       {t.brands[brand.key as keyof typeof t.brands].desc}

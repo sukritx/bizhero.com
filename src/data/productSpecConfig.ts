@@ -68,4 +68,4 @@ export const suffixPatterns = [
   /_\d{8}_\d{6}/i,
 ];
 
-export const brandPrefixes = ["PETRONAS", "Valvoline", "Monroe"];
+export const brandPrefixes = ["PETRONAS", "Valvoline", "Cresco Asia"];

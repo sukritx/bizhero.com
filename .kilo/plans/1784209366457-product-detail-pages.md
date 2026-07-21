@@ -78,7 +78,7 @@ export const folderMappings: FolderMapping[] = [
 
 Also export filename cleanup patterns:
 - Suffixes to strip (regex list): `_PDS_TH_\d{8}`, `_PDS_EN_\d{8}`, `_TDS_TH_\d{8}`, `_TDS_EN_\d{8}`, `_\d{5,6}_PDS_\d{6}`, `_PDS_TH`, `_PDS_EN`, `_TDS_TH`, `_TDS_EN`, `_\w{2,3}_\d{4,8}`, `_Updated \w+ \d{4}`, ` (SDS BI)`, `_SDS_\w+`, `_Rev \d+`, `_\d{8}_\d{6}`
-- Brand name prefixes to strip: PETRONAS, Valvoline, Monroe (case-insensitive)
+- Brand name prefixes to strip: PETRONAS, Valvoline, Cresco Asia (case-insensitive)
 - `\/ prefix stripping: leading numbers like "2. "
 - Final cleanup: replace `_` with space, trim, title-case
 

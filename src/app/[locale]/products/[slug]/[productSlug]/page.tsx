@@ -11,7 +11,7 @@ import CallToAction from "@/components/CallToAction";
 const brandImages: Record<string, string> = {
   PETRONAS: "/images/brands/petronas.svg",
   Valvoline: "/images/brands/valvoline.svg",
-  Monroe: "/images/brands/monroe.png",
+  "Cresco Asia": "/images/brands/cresco-asia.jpg",
 };
 
 interface Props { params: Promise<{ slug: string; productSlug: string; locale: string }> }

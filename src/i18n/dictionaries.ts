@@ -12,14 +12,14 @@ const th = {
   metadata: {
     home: {
       title: "บิซฮีโร่ ลูบริแคนท์ส | ตัวแทนจำหน่ายน้ำมันหล่อลื่นอุตสาหกรรมและยานยนต์",
-      description: "บิซฮีโร่เป็นตัวแทนจำหน่ายน้ำมันหล่อลื่น Valvoline, PETRONAS และ Monroe สำหรับงานอุตสาหกรรม ยานยนต์ และเชิงพาณิชย์ พร้อมบริการบำรุงรักษา คำแนะนำด้านเทคนิค และการวิเคราะห์น้ำมันใช้แล้วเพื่อลดเวลาหยุดทำงานของเครื่องจักร",
-      keywords: "น้ำมันหล่อลื่นอุตสาหกรรม, น้ำมันหล่อลื่นรถยนต์, ตัวแทนจำหน่าย Valvoline, น้ำมันหล่อลื่น PETRONAS, น้ำมันงานโลหะ Monroe, น้ำมันเครื่อง, น้ำมันไฮดรอลิก, น้ำมันเกียร์, จาระบี, วิเคราะห์น้ำมันใช้แล้ว, ซัพพลายเออร์น้ำมันหล่อลื่น",
+      description: "บิซฮีโร่เป็นตัวแทนจำหน่ายน้ำมันหล่อลื่น Valvoline, PETRONAS และ Cresco Asia สำหรับงานอุตสาหกรรม ยานยนต์ และเชิงพาณิชย์ พร้อมบริการบำรุงรักษา คำแนะนำด้านเทคนิค และการวิเคราะห์น้ำมันใช้แล้วเพื่อลดเวลาหยุดทำงานของเครื่องจักร",
+      keywords: "น้ำมันหล่อลื่นอุตสาหกรรม, น้ำมันหล่อลื่นรถยนต์, ตัวแทนจำหน่าย Valvoline, น้ำมันหล่อลื่น PETRONAS, น้ำมันงานโลหะ Cresco Asia, น้ำมันเครื่อง, น้ำมันไฮดรอลิก, น้ำมันเกียร์, จาระบี, วิเคราะห์น้ำมันใช้แล้ว, ซัพพลายเออร์น้ำมันหล่อลื่น",
       ogTitle: "บิซฮีโร่ ลูบริแคนท์ส | ตัวแทนจำหน่ายน้ำมันหล่อลื่นอุตสาหกรรมและยานยนต์",
-      ogDescription: "ตัวแทนจำหน่าย Valvoline, PETRONAS และ Monroe ที่ได้รับอนุญาต พร้อมบริการบำรุงรักษา คำแนะนำด้านเทคนิค และการวิเคราะห์น้ำมันใช้แล้ว",
+      ogDescription: "ตัวแทนจำหน่าย Valvoline, PETRONAS และ Cresco Asia ที่ได้รับอนุญาต พร้อมบริการบำรุงรักษา คำแนะนำด้านเทคนิค และการวิเคราะห์น้ำมันใช้แล้ว",
     },
     about: {
       title: "เกี่ยวกับเรา | บิซฮีโร่ ลูบริแคนท์ส - พาร์ทเนอร์น้ำมันหล่อลื่นที่คุณไว้วางใจ",
-      description: "บิซฮีโร่ ลูบริแคนท์สเป็นตัวแทนจำหน่าย Valvoline, PETRONAS และ Monroe ที่ได้รับอนุญาต เราจำหน่ายน้ำมันหล่อลื่นสำหรับยานยนต์และอุตสาหกรรมครบวงจร พร้อมบริการบำรุงรักษา",
+      description: "บิซฮีโร่ ลูบริแคนท์สเป็นตัวแทนจำหน่าย Valvoline, PETRONAS และ Cresco Asia ที่ได้รับอนุญาต เราจำหน่ายน้ำมันหล่อลื่นสำหรับยานยนต์และอุตสาหกรรมครบวงจร พร้อมบริการบำรุงรักษา",
     },
     services: {
       title: "บริการของเรา | บิซฮีโร่ ลูบริแคนท์ส - เปลี่ยนถ่ายน้ำมันเครื่อง ทำความสะอาดถังพัก วิเคราะห์น้ำมันใช้แล้ว",
@@ -34,8 +34,8 @@ const th = {
       description: "บิซฮีโร่ ลูบริแคนท์สให้บริการครอบคลุมพื้นที่กรุงเทพฯและปริมณฑล พร้อมจัดส่งน้ำมันหล่อลื่นทั่วประเทศ",
     },
     partners: {
-      title: "แบรนด์ของเรา | บิซฮีโร่ ลูบริแคนท์ส - Valvoline, PETRONAS, Monroe",
-      description: "บิซฮีโร่เป็นตัวแทนจำหน่าย Valvoline, PETRONAS และ Monroe ที่ได้รับอนุญาต ผลิตภัณฑ์น้ำมันหล่อลื่นคุณภาพสูงสำหรับอุตสาหกรรมและยานยนต์",
+      title: "แบรนด์ของเรา | บิซฮีโร่ ลูบริแคนท์ส - Valvoline, PETRONAS, Cresco Asia",
+      description: "บิซฮีโร่เป็นตัวแทนจำหน่าย Valvoline, PETRONAS และ Cresco Asia ที่ได้รับอนุญาต ผลิตภัณฑ์น้ำมันหล่อลื่นคุณภาพสูงสำหรับอุตสาหกรรมและยานยนต์",
     },
     terms: {
       title: "ข้อกำหนดและเงื่อนไข | บิซฮีโร่ ลูบริแคนท์ส",
@@ -68,7 +68,7 @@ const th = {
   hero: {
     badge: "ตัวแทนจำหน่ายน้ำมันหล่อลื่นที่ได้รับอนุญาต",
     headline: "น้ำมันหล่อลื่นคุณภาพสูงและบริการบำรุงรักษา",
-    subtitle: "ตัวแทนจำหน่าย Valvoline, PETRONAS และ Monroe ที่ได้รับอนุญาต — พร้อมบริการบำรุงรักษา คำแนะนำด้านเทคนิค และการวิเคราะห์น้ำมันเพื่อให้เครื่องจักรของคุณทำงานได้อย่างต่อเนื่อง",
+    subtitle: "ตัวแทนจำหน่าย Valvoline, PETRONAS และ Cresco Asia ที่ได้รับอนุญาต — พร้อมบริการบำรุงรักษา คำแนะนำด้านเทคนิค และการวิเคราะห์น้ำมันเพื่อให้เครื่องจักรของคุณทำงานได้อย่างต่อเนื่อง",
     exploreProducts: "ดูผลิตภัณฑ์",
     ourServices: "บริการของเรา",
     statBrands: "แบรนด์ที่เชื่อถือได้",
@@ -85,7 +85,7 @@ const th = {
   aboutUs: {
     badge: "เกี่ยวกับบิซฮีโร่",
     headline: "มากกว่าแค่ซัพพลายเออร์น้ำมันหล่อลื่น",
-    p1: "บิซฮีโร่ ลูบริแคนท์สเป็นตัวแทนจำหน่าย Valvoline, PETRONAS และ Monroe ที่ได้รับอนุญาต ให้บริการลูกค้าด้านยานยนต์ เชิงพาณิชย์ และอุตสาหกรรม เราจำหน่ายน้ำมันเครื่อง น้ำมันไฮดรอลิก น้ำมันเกียร์ จาระบี และน้ำมันหล่อลื่นชนิดพิเศษครบวงจร",
+    p1: "บิซฮีโร่ ลูบริแคนท์สเป็นตัวแทนจำหน่าย Valvoline, PETRONAS และ Cresco Asia ที่ได้รับอนุญาต ให้บริการลูกค้าด้านยานยนต์ เชิงพาณิชย์ และอุตสาหกรรม เราจำหน่ายน้ำมันเครื่อง น้ำมันไฮดรอลิก น้ำมันเกียร์ จาระบี และน้ำมันหล่อลื่นชนิดพิเศษครบวงจร",
     p2: "สิ่งที่ทำให้เราแตกต่าง: เราไม่ได้แค่ขายผลิตภัณฑ์ เราให้บริการบำรุงรักษาอุตสาหกรรม รวมถึงการเปลี่ยนถ่ายน้ำมันเครื่อง ทำความสะอาดถังพักน้ำมัน และวิเคราะห์น้ำมันใช้แล้ว เพื่อช่วยให้ธุรกิจดูแลเครื่องจักรและลดเวลาหยุดทำงานที่มีค่าใช้จ่ายสูง",
     check1: "ตัวแทนจำหน่ายที่ได้รับอนุญาต",
     check2: "คำแนะนำด้านเทคนิค",
@@ -104,7 +104,7 @@ const th = {
   ourServices: {
     badge: "หมวดหมู่ผลิตภัณฑ์",
     headline: "กลุ่มผลิตภัณฑ์ของเรา",
-    subtitle: "เลือกชมน้ำมันหล่อลื่นสำหรับยานยนต์และอุตสาหกรรมครบวงจรจากแบรนด์ที่เชื่อถือได้ Valvoline, PETRONAS และ Monroe",
+    subtitle: "เลือกชมน้ำมันหล่อลื่นสำหรับยานยนต์และอุตสาหกรรมครบวงจรจากแบรนด์ที่เชื่อถือได้ Valvoline, PETRONAS และ Cresco Asia",
     productCategories: {
       engineOil: {
         title: "น้ำมันเครื่อง",
@@ -128,7 +128,7 @@ const th = {
       },
       metalWorkingFluid: {
         title: "น้ำมันงานโลหะ",
-        description: "น้ำมันสำหรับงานกลึง CNC เจียร ตัด กัด และเจาะ เพิ่มอายุเครื่องมือและคุณภาพผิวงานด้วยผลิตภัณฑ์ Monroe",
+        description: "น้ำมันสำหรับงานกลึง CNC เจียร ตัด กัด และเจาะ เพิ่มอายุเครื่องมือและคุณภาพผิวงานด้วยผลิตภัณฑ์ Cresco Asia",
       },
     },
     viewProducts: "ดูผลิตภัณฑ์",
@@ -162,7 +162,7 @@ const th = {
     items: [
       {
         question: "บิซฮีโร่จำหน่ายน้ำมันหล่อลื่นแบรนด์อะไรบ้าง?",
-        answer: "บิซฮีโร่เป็นตัวแทนจำหน่าย Valvoline, PETRONAS และ Monroe ที่ได้รับอนุญาต Valvoline มีน้ำมันหล่อลื่นสำหรับยานยนต์และอุตสาหกรรม PETRONAS มีโซลูชั่นสำหรับอุตสาหกรรมและเชิงพาณิชย์ และ Monroe มีความเชี่ยวชาญด้านน้ำมันงานโลหะ",
+        answer: "บิซฮีโร่เป็นตัวแทนจำหน่าย Valvoline, PETRONAS และ Cresco Asia ที่ได้รับอนุญาต Valvoline มีน้ำมันหล่อลื่นสำหรับยานยนต์และอุตสาหกรรม PETRONAS มีโซลูชั่นสำหรับอุตสาหกรรมและเชิงพาณิชย์ และ Cresco Asia มีความเชี่ยวชาญด้านน้ำมันงานโลหะ",
       },
       {
         question: "ฉันจะเลือกน้ำมันเครื่องที่เหมาะสมได้อย่างไร?",
@@ -306,7 +306,7 @@ const th = {
       title: "เกี่ยวกับ",
       submenu: [
         { title: "เกี่ยวกับเรา", path: "/about", description: "เรื่องราวและทีมงานของเรา" },
-        { title: "แบรนด์ของเรา", path: "/brands", description: "Valvoline, PETRONAS, Monroe" },
+        { title: "แบรนด์ของเรา", path: "/brands", description: "Valvoline, PETRONAS, Cresco Asia" },
         { title: "บล็อก", path: "/blogs", description: "บทความและเคล็ดลับการบำรุงรักษา" },
         { title: "คำถามที่พบบ่อย", path: "/faqs", description: "คำถามที่ถามบ่อย" },
         { title: "ติดต่อเรา", path: "/contact", description: "ติดต่อทีมงานของเรา" },
@@ -318,11 +318,11 @@ const th = {
     title: "เกี่ยวกับบิซฮีโร่ ลูบริแคนท์ส",
     subtitle: "พาร์ทเนอร์ด้านโซลูชั่นการหล่อลื่นสำหรับยานยนต์และอุตสาหกรรมที่คุณไว้วางใจ",
     whoWeAre: "เราคือใคร",
-    whoWeAreP1: "บิซฮีโร่ ลูบริแคนท์สเป็นตัวแทนจำหน่ายแบรนด์น้ำมันหล่อลื่นระดับโลกที่ได้รับอนุญาต รวมถึง Valvoline, PETRONAS และ Monroe เราให้บริการอู่ซ่อมรถ ฟลีทเพื่อการพาณิชย์ ผู้ผลิตในอุตสาหกรรม บริษัทก่อสร้าง การเกษตร และผู้ประกอบการอุปกรณ์หนัก",
+    whoWeAreP1: "บิซฮีโร่ ลูบริแคนท์สเป็นตัวแทนจำหน่ายแบรนด์น้ำมันหล่อลื่นระดับโลกที่ได้รับอนุญาต รวมถึง Valvoline, PETRONAS และ Cresco Asia เราให้บริการอู่ซ่อมรถ ฟลีทเพื่อการพาณิชย์ ผู้ผลิตในอุตสาหกรรม บริษัทก่อสร้าง การเกษตร และผู้ประกอบการอุปกรณ์หนัก",
     whoWeAreP2: "เรามีมากกว่าร้านขายน้ำมันหล่อลื่นทั่วไป ทีมงานของเราให้คำแนะนำด้านเทคนิคในการเลือกน้ำมันหล่อลื่น บริการบำรุงรักษาอุตสาหกรรม และการบำรุงรักษาเชิงพยากรณ์ผ่านการวิเคราะห์น้ำมันใช้แล้ว — ช่วยให้ธุรกิจดูแลเครื่องจักรและลดเวลาหยุดทำงานที่มีค่าใช้จ่ายสูง",
     whyChoose: "ทำไมต้องเลือกบิซฮีโร่",
     whyItems: [
-      { title: "ตัวแทนจำหน่ายที่ได้รับอนุญาต", desc: "ตัวแทนจำหน่าย Valvoline, PETRONAS และ Monroe อย่างเป็นทางการ — รับประกันสินค้าแท้" },
+      { title: "ตัวแทนจำหน่ายที่ได้รับอนุญาต", desc: "ตัวแทนจำหน่าย Valvoline, PETRONAS และ Cresco Asia อย่างเป็นทางการ — รับประกันสินค้าแท้" },
       { title: "ผลิตภัณฑ์ครบวงจร", desc: "น้ำมันเครื่อง น้ำมันไฮดรอลิก น้ำมันเกียร์ จาระบี และน้ำมันหล่อลื่นชนิดพิเศษ ครบในที่เดียว" },
       { title: "ความเชี่ยวชาญด้านเทคนิค", desc: "ทีมงานของเราช่วยคุณเลือกน้ำมันหล่อลื่นที่เหมาะสมสำหรับอุปกรณ์และการใช้งานเฉพาะของคุณ" },
       { title: "บริการบำรุงรักษา", desc: "เปลี่ยนถ่ายน้ำมันเครื่อง ทำความสะอาดถังพัก และวิเคราะห์น้ำมันใช้แล้วเพื่อให้อุปกรณ์ของคุณทำงานได้อย่างต่อเนื่อง" },
@@ -333,7 +333,7 @@ const th = {
     brands: {
       valvoline: { desc: "น้ำมันหล่อลื่นสำหรับยานยนต์และอุตสาหกรรมจากหนึ่งในแบรนด์น้ำมันหล่อลื่นที่เก่าแก่ที่สุดในโลก" },
       petronas: { desc: "โซลูชั่นน้ำมันหล่อลื่นสำหรับอุตสาหกรรมและเชิงพาณิชย์สำหรับงานหนัก" },
-      monroe: { desc: "น้ำมันงานโลหะสำหรับกลึง CNC เจียร ตัด และกระบวนการโลหะ" },
+      crescoasia: { desc: "น้ำมันงานโลหะสำหรับกลึง CNC เจียร ตัด และกระบวนการโลหะ" },
     },
   },
 
@@ -403,14 +403,14 @@ const en = {
   metadata: {
     home: {
       title: "BizHero Lubricants | Industrial & Automotive Lubricant Supplier",
-      description: "BizHero supplies premium Valvoline, PETRONAS, and Monroe lubricants for automotive, commercial, and industrial applications. We offer maintenance services, technical support, and used oil analysis to reduce equipment downtime.",
-      keywords: "industrial lubricants, automotive lubricants, Valvoline distributor, PETRONAS lubricants, Monroe metal working fluid, engine oil, hydraulic oil, gear oil, grease, used oil analysis, lubricant supplier",
+      description: "BizHero supplies premium Valvoline, PETRONAS, and Cresco Asia lubricants for automotive, commercial, and industrial applications. We offer maintenance services, technical support, and used oil analysis to reduce equipment downtime.",
+      keywords: "industrial lubricants, automotive lubricants, Valvoline distributor, PETRONAS lubricants, Cresco Asia metal working fluid, engine oil, hydraulic oil, gear oil, grease, used oil analysis, lubricant supplier",
       ogTitle: "BizHero Lubricants | Industrial & Automotive Lubricant Supplier",
-      ogDescription: "Authorized distributor of Valvoline, PETRONAS, and Monroe lubricants. Maintenance services, technical support, and used oil analysis.",
+      ogDescription: "Authorized distributor of Valvoline, PETRONAS, and Cresco Asia lubricants. Maintenance services, technical support, and used oil analysis.",
     },
     about: {
       title: "About Us | BizHero Lubricants - Your Trusted Lubricant Partner",
-      description: "BizHero Lubricants is an authorized distributor of Valvoline, PETRONAS, and Monroe lubricants. We supply a complete range of automotive and industrial lubricants plus maintenance services.",
+      description: "BizHero Lubricants is an authorized distributor of Valvoline, PETRONAS, and Cresco Asia lubricants. We supply a complete range of automotive and industrial lubricants plus maintenance services.",
     },
     services: {
       title: "Our Services | BizHero Lubricants - Oil Change, Sump Tank Cleaning, Used Oil Analysis",
@@ -418,15 +418,15 @@ const en = {
     },
     blogs: {
       title: "Lubrication Insights Blog | BizHero Lubricants",
-      description: "Expert insights on industrial lubricants, used oil analysis, engine maintenance, and equipment reliability from BizHero Lubricants — the authorized distributor of Valvoline, PETRONAS, and Monroe.",
+      description: "Expert insights on industrial lubricants, used oil analysis, engine maintenance, and equipment reliability from BizHero Lubricants — the authorized distributor of Valvoline, PETRONAS, and Cresco Asia.",
     },
     ourWork: {
       title: "Service Areas | BizHero Lubricants",
       description: "BizHero Lubricants serves Bangkok metropolitan area and surrounding provinces with nationwide delivery available.",
     },
     partners: {
-      title: "Our Brands | BizHero Lubricants - Valvoline, PETRONAS, Monroe",
-      description: "BizHero is an authorized distributor of Valvoline, PETRONAS, and Monroe. Premium lubricant products for industrial and automotive applications.",
+      title: "Our Brands | BizHero Lubricants - Valvoline, PETRONAS, Cresco Asia",
+      description: "BizHero is an authorized distributor of Valvoline, PETRONAS, and Cresco Asia. Premium lubricant products for industrial and automotive applications.",
     },
     terms: {
       title: "Terms of Service | BizHero Lubricants",
@@ -459,7 +459,7 @@ const en = {
   hero: {
     badge: "Authorized Lubricant Distributor",
     headline: "Premium Lubricants & Maintenance Services",
-    subtitle: "Authorized distributor of Valvoline, PETRONAS, and Monroe — plus maintenance, technical support, and oil analysis to keep your equipment running.",
+    subtitle: "Authorized distributor of Valvoline, PETRONAS, and Cresco Asia — plus maintenance, technical support, and oil analysis to keep your equipment running.",
     exploreProducts: "Explore Products",
     ourServices: "Our Services",
     statBrands: "Trusted Brands",
@@ -476,7 +476,7 @@ const en = {
   aboutUs: {
     badge: "About BizHero",
     headline: "More Than Just a Lubricant Supplier",
-    p1: "BizHero Lubricants is an authorized distributor of Valvoline, PETRONAS, and Monroe lubricants, serving automotive, commercial, and industrial customers. We supply a comprehensive range of engine oils, hydraulic oils, gear oils, greases, and specialty lubricants.",
+    p1: "BizHero Lubricants is an authorized distributor of Valvoline, PETRONAS, and Cresco Asia lubricants, serving automotive, commercial, and industrial customers. We supply a comprehensive range of engine oils, hydraulic oils, gear oils, greases, and specialty lubricants.",
     p2: "What sets us apart: we don't just sell products. We provide industrial maintenance services including oil changes, sump tank cleaning, and used oil analysis to help businesses maintain machinery and reduce costly equipment downtime.",
     check1: "Authorized Distributor",
     check2: "Technical Support",
@@ -495,7 +495,7 @@ const en = {
   ourServices: {
     badge: "Product Categories",
     headline: "Our Product Range",
-    subtitle: "Browse our comprehensive range of automotive and industrial lubricants from trusted brands Valvoline, PETRONAS, and Monroe.",
+    subtitle: "Browse our comprehensive range of automotive and industrial lubricants from trusted brands Valvoline, PETRONAS, and Cresco Asia.",
     productCategories: {
       engineOil: {
         title: "Engine Oil",
@@ -519,7 +519,7 @@ const en = {
       },
       metalWorkingFluid: {
         title: "Metal Working Fluid",
-        description: "Straight oils for CNC machining, grinding, cutting, milling, and drilling. Improve tool life and surface finish with Monroe products.",
+        description: "Straight oils for CNC machining, grinding, cutting, milling, and drilling. Improve tool life and surface finish with Cresco Asia products.",
       },
     },
     viewProducts: "View Products",
@@ -553,7 +553,7 @@ const en = {
     items: [
       {
         question: "What brands of lubricants does BizHero distribute?",
-        answer: "BizHero is an authorized distributor of Valvoline, PETRONAS, and Monroe lubricants. Valvoline provides automotive and industrial lubricants, PETRONAS offers industrial and commercial solutions, and Monroe specializes in metal working fluids.",
+        answer: "BizHero is an authorized distributor of Valvoline, PETRONAS, and Cresco Asia lubricants. Valvoline provides automotive and industrial lubricants, PETRONAS offers industrial and commercial solutions, and Cresco Asia specializes in metal working fluids.",
       },
       {
         question: "How do I choose the right engine oil?",
@@ -697,7 +697,7 @@ const en = {
       title: "About",
       submenu: [
         { title: "About Us", path: "/about", description: "Our story and team" },
-        { title: "Our Brands", path: "/brands", description: "Valvoline, PETRONAS, Monroe" },
+        { title: "Our Brands", path: "/brands", description: "Valvoline, PETRONAS, Cresco Asia" },
         { title: "Blog", path: "/blogs", description: "Articles & maintenance tips" },
         { title: "FAQs", path: "/faqs", description: "Frequently asked questions" },
         { title: "Contact Us", path: "/contact", description: "Get in touch with our team" },
@@ -709,11 +709,11 @@ const en = {
     title: "About BizHero Lubricants",
     subtitle: "Your trusted partner for automotive and industrial lubrication solutions.",
     whoWeAre: "Who We Are",
-    whoWeAreP1: "BizHero Lubricants is an authorized distributor of world-class lubricant brands including Valvoline, PETRONAS, and Monroe. We serve automotive workshops, commercial fleets, industrial manufacturers, construction companies, agricultural operations, and heavy equipment operators.",
+    whoWeAreP1: "BizHero Lubricants is an authorized distributor of world-class lubricant brands including Valvoline, PETRONAS, and Cresco Asia. We serve automotive workshops, commercial fleets, industrial manufacturers, construction companies, agricultural operations, and heavy equipment operators.",
     whoWeAreP2: "Unlike typical lubricant retailers, we go beyond product sales. Our team provides technical support for lubricant selection, industrial maintenance services, and predictive maintenance through used oil analysis — helping businesses maintain machinery and reduce costly equipment downtime.",
     whyChoose: "Why Choose BizHero",
     whyItems: [
-      { title: "Authorized Distributor", desc: "Official distributor of Valvoline, PETRONAS, and Monroe — guaranteed genuine products." },
+      { title: "Authorized Distributor", desc: "Official distributor of Valvoline, PETRONAS, and Cresco Asia — guaranteed genuine products." },
       { title: "Complete Product Range", desc: "Engine oils, hydraulic oils, gear oils, greases, and specialty lubricants all in one place." },
       { title: "Technical Expertise", desc: "Our team helps you select the right lubricant for your specific equipment and application." },
       { title: "Maintenance Services", desc: "Oil change, sump tank cleaning, and used oil analysis to keep your equipment running smoothly." },
@@ -724,7 +724,7 @@ const en = {
     brands: {
       valvoline: { desc: "Automotive and industrial lubricants from one of the oldest lubricant brands in the world." },
       petronas: { desc: "Industrial and commercial lubricant solutions for heavy-duty applications." },
-      monroe: { desc: "Metal working fluids for CNC machining, grinding, cutting, and metal processing." },
+      crescoasia: { desc: "Metal working fluids for CNC machining, grinding, cutting, and metal processing." },
     },
   },
 
@@ -761,7 +761,7 @@ const en = {
 
   jsonLd: {
     name: "BizHero Lubricants",
-    description: "Authorized distributor of Valvoline, PETRONAS, and Monroe lubricants — supplying automotive, commercial, and industrial lubricants across Thailand.",
+    description: "Authorized distributor of Valvoline, PETRONAS, and Cresco Asia lubricants — supplying automotive, commercial, and industrial lubricants across Thailand.",
     priceRange: "$$",
     areaServed: [
       { name: "Bangkok" },

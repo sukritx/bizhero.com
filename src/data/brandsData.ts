@@ -53,13 +53,13 @@ export const brands: Brand[] = [
     ],
   },
   {
-    slug: "monroe",
-    name: "Monroe",
+    slug: "cresco-asia",
+    name: "Cresco Asia",
     description: {
-      th: "Monroe เชี่ยวชาญด้านน้ำมันงานโลหะสำหรับการผลิตในอุตสาหกรรม บิซฮีโร่จัดจำหน่ายผลิตภัณฑ์ Monroe เพื่อรองรับงานกลึง CNC เจียร ตัด กัด เจาะ และกระบวนการโลหะ",
-      en: "Monroe specializes in metal working fluids for industrial manufacturing applications. BizHero distributes Monroe products to support CNC machining, grinding, cutting, milling, drilling, and metal processing operations.",
+      th: "Cresco Asia เชี่ยวชาญด้านน้ำมันงานโลหะสำหรับการผลิตในอุตสาหกรรม บิซฮีโร่จัดจำหน่ายผลิตภัณฑ์ Cresco Asia เพื่อรองรับงานกลึง CNC เจียร ตัด กัด เจาะ และกระบวนการโลหะ",
+      en: "Cresco Asia specializes in metal working fluids for industrial manufacturing applications. BizHero distributes Cresco Asia products to support CNC machining, grinding, cutting, milling, drilling, and metal processing operations.",
     },
-    logo: "/images/brands/monroe.png",
+    logo: "/images/brands/cresco-asia.jpg",
     products: [
       { name: { th: "น้ำมันงานโลหะ", en: "Metal Working Fluid" }, items: ["Straight Oils for Metalworking"] },
     ],
