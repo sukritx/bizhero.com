@@ -16,8 +16,10 @@ export const brandFolderMap: Record<string, string> = {
 };
 
 export const excludeFolders = new Set([
-  "COA", "ISO Valvoline", "เปรียบเทียบแบรนด์"
+  "COA", "COA Gear MEP", "ISO Valvoline", "เปรียบเทียบแบรนด์"
 ]);
+
+export const excludeFilenamePrefixes = ["COA "];
 
 export const folderMappings: FolderMapping[] = [
   { brandName: "PETRONAS", folderPath: "Petronas PDS/Urania Series", categorySlug: "engine-oil" },

@@ -1,6 +1,6 @@
 import fs from "fs";
 import path from "path";
-import { brandFolderMap, excludeFolders, folderMappings, suffixPatterns, brandPrefixes } from "./productSpecConfig";
+import { brandFolderMap, excludeFolders, excludeFilenamePrefixes, folderMappings, suffixPatterns, brandPrefixes } from "./productSpecConfig";
 import { productCategories } from "./productsData";
 
 export interface DiscoveredProduct {
@@ -87,13 +87,18 @@ export function getAllDiscoveredProducts(): DiscoveredProduct[] {
     const hasExcluded = parentFolders.some((p) => excludeFolders.has(p));
     if (hasExcluded) continue;
 
+    const basename = path.basename(absPath);
+    const hasExcludedFilename = excludeFilenamePrefixes.some((prefix) =>
+      basename.startsWith(prefix)
+    );
+    if (hasExcludedFilename) continue;
+
     let mapping = findMapping(relPath);
     if (!mapping) continue;
 
     let categorySlug = mapping.categorySlug;
 
     if (mapping.filenameRules && mapping.filenameRules.length > 0) {
-      const basename = path.basename(absPath);
       const matchedRule = mapping.filenameRules.find((rule) =>
         basename.toLowerCase().includes(rule.keyword.toLowerCase())
       );
