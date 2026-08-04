@@ -40,7 +40,10 @@ export default function Contact() {
                   <div>
                     <h3 className="mb-[18px] text-lg font-semibold text-dark dark:text-white">{t("contact.getInTouch")}</h3>
                     <p className="text-base text-body-color dark:text-dark-6">
-                      <a href="mailto:info@bizherolubricants.com" className="hover:text-primary">info@bizherolubricants.com</a>
+                      <a href="mailto:info@biz-hero.com" className="hover:text-primary">info@biz-hero.com</a>
+                    </p>
+                    <p className="mt-2 text-base text-body-color dark:text-dark-6">
+                      <a href="tel:+66829365416" className="hover:text-primary">082-936-5416</a>
                     </p>
                     <p className="mt-2 text-base text-body-color dark:text-dark-6">{t("contact.hours")}</p>
                     <p className="text-base text-body-color dark:text-dark-6">{t("contact.saturday")}</p>
