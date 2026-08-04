@@ -57,7 +57,7 @@ const menuData: Menu[] = [
     newTab: false,
     submenu: [
       { id: 1, title: "About Us", path: "/about", newTab: false, description: "Our story and team" },
-      { id: 2, title: "Our Brands", path: "/brands", newTab: false, description: "Valvoline, PETRONAS, Monroe" },
+      { id: 2, title: "Our Brands", path: "/brands", newTab: false, description: "Valvoline, PETRONAS, Cresco Asia" },
       { id: 3, title: "Blog", path: "/blogs", newTab: false, description: "Articles & maintenance tips" },
       { id: 4, title: "FAQs", path: "/faqs", newTab: false, description: "Frequently asked questions" },
       { id: 5, title: "Contact Us", path: "/contact", newTab: false, description: "Get in touch with our team" },

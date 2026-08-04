@@ -30,7 +30,7 @@ const routes = [
   "/brands",
   "/brands/valvoline",
   "/brands/petronas",
-  "/brands/monroe",
+  "/brands/cresco-asia",
   "/blogs",
   "/faqs",
   "/contact",

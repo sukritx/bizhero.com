@@ -37,7 +37,7 @@ export default function Hero({ dict, locale }: { dict: Dictionary; locale?: stri
                   <Image src="/images/brands/valvoline.svg" alt="Valvoline" width={100} height={40} className="h-12 w-auto object-contain" />
                 </span>
                 <span className="flex items-center justify-center rounded bg-white p-2">
-                  <Image src="/images/brands/monroe.png" alt="Monroe" width={100} height={40} className="h-12 w-auto object-contain" />
+                  <Image src="/images/brands/cresco-asia.jpg" alt="Cresco Asia" width={100} height={40} className="h-12 w-auto object-contain" />
                 </span>
               </div>
               <div className="mt-8 flex flex-wrap gap-4 sm:mt-10">

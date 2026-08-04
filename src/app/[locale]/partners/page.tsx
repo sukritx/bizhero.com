@@ -19,7 +19,7 @@ export default async function BrandsPage({ params }: { params: Promise<{ locale:
   const brands = [
     { slug: "valvoline", name: "Valvoline", desc: dict.aboutPage.brands.valvoline.desc, logo: "/images/brands/valvoline.svg" },
     { slug: "petronas", name: "PETRONAS", desc: dict.aboutPage.brands.petronas.desc, logo: "/images/brands/petronas.svg" },
-    { slug: "monroe", name: "Monroe", desc: dict.aboutPage.brands.monroe.desc, logo: "/images/brands/monroe.png" },
+    { slug: "cresco-asia", name: "Cresco Asia", desc: dict.aboutPage.brands.crescoasia.desc, logo: "/images/brands/cresco-asia.jpg" },
   ];
 
   return (
