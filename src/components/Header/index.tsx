@@ -75,7 +75,8 @@ const Header = () => {
         { title: t("menu.4.submenu.1.title"), path: p("/brands"), description: t("menu.4.submenu.1.description") },
         { title: t("menu.4.submenu.2.title"), path: p("/blogs"), description: t("menu.4.submenu.2.description") },
         { title: t("menu.4.submenu.3.title"), path: p("/faqs"), description: t("menu.4.submenu.3.description") },
-        { title: t("menu.4.submenu.4.title"), path: p("/contact"), description: t("menu.4.submenu.4.description") },
+        { title: t("menu.4.submenu.4.title"), path: p("/career"), description: t("menu.4.submenu.4.description") },
+        { title: t("menu.4.submenu.5.title"), path: p("/contact"), description: t("menu.4.submenu.5.description") },
       ],
     },
   ];

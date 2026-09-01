@@ -62,6 +62,7 @@ export default function Footer({ dict, locale }: { dict: Dictionary; locale?: st
                 <li><Link href={`${p}/brands`} className="mb-3 inline-block text-base text-gray-600 hover:text-primary">{t.ourBrands}</Link></li>
                 <li><Link href={`${p}/blogs`} className="mb-3 inline-block text-base text-gray-600 hover:text-primary">{t.blog}</Link></li>
                 <li><Link href={`${p}/faqs`} className="mb-3 inline-block text-base text-gray-600 hover:text-primary">{t.faqs}</Link></li>
+                <li><Link href={`${p}/career`} className="mb-3 inline-block text-base text-gray-600 hover:text-primary">{t.career}</Link></li>
                 <li><a href="https://share-na2.hsforms.com/283IRhHVgQLuB-uFLk7V9cQ40ae96" className="mb-3 inline-block text-base text-gray-600 hover:text-primary">{t.contact}</a></li>
               </ul>
             </div>

@@ -37,6 +37,10 @@ const th = {
       title: "แบรนด์ของเรา | บิซฮีโร่ ลูบริแคนท์ส - Valvoline, PETRONAS, Cresco Asia",
       description: "บิซฮีโร่เป็นตัวแทนจำหน่าย Valvoline, PETRONAS และ Cresco Asia ที่ได้รับอนุญาต ผลิตภัณฑ์น้ำมันหล่อลื่นคุณภาพสูงสำหรับอุตสาหกรรมและยานยนต์",
     },
+    career: {
+      title: "ร่วมงานกับเรา | บิซฮีโร่ ลูบริแคนท์ส",
+      description: "สนใจร่วมงานกับบิซฮีโร่ ลูบริแคนท์ส มาร่วมเติบโตไปกับทีมงานของเรา ส่งใบสมัครของคุณวันนี้",
+    },
     terms: {
       title: "ข้อกำหนดและเงื่อนไข | บิซฮีโร่ ลูบริแคนท์ส",
       description: "ข้อกำหนดและเงื่อนไขการใช้เว็บไซต์และบริการของบิซฮีโร่ ลูบริแคนท์ส",
@@ -216,6 +220,7 @@ const th = {
     ourBrands: "แบรนด์ของเรา",
     blog: "บล็อก",
     faqs: "คำถามที่พบบ่อย",
+    career: "ร่วมงานกับเรา",
     contact: "ติดต่อ",
     getInTouch: "ติดต่อเรา",
     getInTouchDesc: "ต้องการความช่วยเหลือในการเลือกน้ำมันหล่อลื่นที่เหมาะสม? ทีมเทคนิคของเราพร้อมให้คำปรึกษาด้านการเลือกผลิตภัณฑ์และโซลูชั่นการบำรุงรักษา",
@@ -309,6 +314,7 @@ const th = {
         { title: "แบรนด์ของเรา", path: "/brands", description: "Valvoline, PETRONAS, Cresco Asia" },
         { title: "บล็อก", path: "/blogs", description: "บทความและเคล็ดลับการบำรุงรักษา" },
         { title: "คำถามที่พบบ่อย", path: "/faqs", description: "คำถามที่ถามบ่อย" },
+        { title: "ร่วมงานกับเรา", path: "/career", description: "ตำแหน่งงานและโอกาสในการทำงาน" },
         { title: "ติดต่อเรา", path: "/contact", description: "ติดต่อทีมงานของเรา" },
       ],
     },
@@ -366,6 +372,15 @@ const th = {
         suitableFor: ["เครื่องจักรอุตสาหกรรม", "โรงงานผลิต", "อุปกรณ์ก่อสร้าง", "รถฟลีท", "อุปกรณ์การเกษตร"],
       },
     },
+  },
+
+  careerPage: {
+    title: "ร่วมงานกับเรา",
+    subtitle: "มาร่วมเป็นส่วนหนึ่งของทีมบิซฮีโร่ ลูบริแคนท์ส ที่เราทุ่มเทเพื่อส่งมอบคุณภาพและการบริการที่ดีที่สุดให้ลูกค้า",
+    whoWeAre: "ทำไมต้องทำงานกับบิซฮีโร่",
+    whoWeAreDesc: "เราเป็นทีมงานที่ขับเคลื่อนด้วยความมุ่งมั่นและความใส่ใจ เราสนับสนุนการเติบโตของพนักงานแต่ละคน พร้อมส่งเสริมการเรียนรู้ การทำงานเป็นทีม และสภาพแวดล้อมการทำงานที่ปลอดภัย",
+    applyNow: "สมัครงานทันที",
+    applyDesc: "กรอกแบบฟอร์มใบสมัครเพื่อสมัครงานกับบิซฮีโร่ ลูบริแคนท์ส เราจะติดต่อกลับเมื่อมีตำแหน่งที่เหมาะสม",
   },
 
   jsonLd: {
@@ -427,6 +442,10 @@ const en = {
     partners: {
       title: "Our Brands | BizHero Lubricants - Valvoline, PETRONAS, Cresco Asia",
       description: "BizHero is an authorized distributor of Valvoline, PETRONAS, and Cresco Asia. Premium lubricant products for industrial and automotive applications.",
+    },
+    career: {
+      title: "Careers | BizHero Lubricants",
+      description: "Interested in working with BizHero Lubricants? Explore open positions and join our team. Submit your application today.",
     },
     terms: {
       title: "Terms of Service | BizHero Lubricants",
@@ -607,6 +626,7 @@ const en = {
     ourBrands: "Our Brands",
     blog: "Blog",
     faqs: "FAQs",
+    career: "Careers",
     contact: "Contact",
     getInTouch: "Get in Touch",
     getInTouchDesc: "Need help choosing the right lubricant? Our technical team is ready to assist with product selection and maintenance solutions.",
@@ -700,6 +720,7 @@ const en = {
         { title: "Our Brands", path: "/brands", description: "Valvoline, PETRONAS, Cresco Asia" },
         { title: "Blog", path: "/blogs", description: "Articles & maintenance tips" },
         { title: "FAQs", path: "/faqs", description: "Frequently asked questions" },
+        { title: "Careers", path: "/career", description: "Open positions and opportunities" },
         { title: "Contact Us", path: "/contact", description: "Get in touch with our team" },
       ],
     },
@@ -757,6 +778,15 @@ const en = {
         suitableFor: ["Industrial machinery", "Manufacturing plants", "Construction equipment", "Fleet vehicles", "Agricultural equipment"],
       },
     },
+  },
+
+  careerPage: {
+    title: "Careers at BizHero",
+    subtitle: "Join the BizHero Lubricants team — where we're dedicated to delivering the best quality products and service to our customers.",
+    whoWeAre: "Why Work at BizHero",
+    whoWeAreDesc: "We are a team driven by commitment and care. We support the growth of every team member while promoting learning, teamwork, and a safe working environment.",
+    applyNow: "Apply Now",
+    applyDesc: "Fill out our application form to apply for a position at BizHero Lubricants. Our team will get back to you when a suitable role is available.",
   },
 
   jsonLd: {
